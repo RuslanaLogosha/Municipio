@@ -7,12 +7,12 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2024-05-13 15:53+0200\n"
-"PO-Revision-Date: 2024-05-13 16:01+0200\n"
+"POT-Creation-Date: 2024-10-14T10:19:10+00:00\n"
+"PO-Revision-Date: 2024-10-14 12:20+0200\n"
 "Language: sv_SE\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Loco-Source-Locale: sv_SE\n"
-"X-Generator: Poedit 3.4.2\n"
+"X-Generator: Poedit 3.5\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-WPHeader: style.css\n"
 "X-Poedit-SourceCharset: UTF-8\n"
@@ -273,6 +273,7 @@ msgstr "Färgen med lägst stopp visas alltid först."
 #: AcfFields/php/external-content-settings.php:30
 #: AcfFields/php/options-api-resources-apis.php:30
 #: AcfFields/php/post-type-schema-settings.php:30
+#: AcfFields/php/user-author-image.php:131
 msgid "Add Row"
 msgstr "Lägg till rad"
 
@@ -314,6 +315,101 @@ msgstr "Välj maxbredden på logotypen."
 #: AcfFields/php/brand-widget.php:52
 msgid "px"
 msgstr "px"
+
+#: AcfFields/php/external-content-settings.php:8
+msgid "External Content"
+msgstr ""
+
+#: AcfFields/php/external-content-settings.php:12
+msgid "External Content Sources"
+msgstr ""
+
+#: AcfFields/php/external-content-settings.php:35
+#: AcfFields/php/post-type-schema-settings.php:35
+msgid "Post type"
+msgstr ""
+
+#: AcfFields/php/external-content-settings.php:62
+msgid "Source type"
+msgstr ""
+
+#: AcfFields/php/external-content-settings.php:75
+#: AcfFields/php/external-content-settings.php:78
+msgid "json"
+msgstr ""
+
+#: AcfFields/php/external-content-settings.php:76
+msgid "typesense"
+msgstr ""
+
+#: AcfFields/php/external-content-settings.php:91
+msgid "File path"
+msgstr ""
+
+#: AcfFields/php/external-content-settings.php:120
+msgid "API key"
+msgstr ""
+
+#: AcfFields/php/external-content-settings.php:147
+msgid "Protocol"
+msgstr ""
+
+#: AcfFields/php/external-content-settings.php:168
+#: AcfFields/php/external-content-settings.php:171
+#: AcfFields/php/options-menu-icon.php:487
+msgid "https"
+msgstr "https"
+
+#: AcfFields/php/external-content-settings.php:169
+#: AcfFields/php/options-menu-icon.php:486
+msgid "http"
+msgstr "http"
+
+#: AcfFields/php/external-content-settings.php:184
+msgid "Host"
+msgstr ""
+
+#: AcfFields/php/external-content-settings.php:213
+msgid "Port"
+msgstr ""
+
+#: AcfFields/php/external-content-settings.php:244
+#: Customizer/Sections/Archive.php:432
+msgid "Collection"
+msgstr "Samlingar"
+
+#: AcfFields/php/external-content-settings.php:273
+msgid "Automatic import schedule"
+msgstr ""
+
+#: AcfFields/php/external-content-settings.php:300
+#: Admin/Options/Theme.php:79
+msgid "Taxonomies"
+msgstr "Taxonomies"
+
+#: AcfFields/php/external-content-settings.php:317
+msgid "Add Taxonomy"
+msgstr ""
+
+#: AcfFields/php/external-content-settings.php:323
+msgid "Create terms from schema property"
+msgstr ""
+
+#: AcfFields/php/external-content-settings.php:327
+msgid "Name of the schema property to use as a taxonomy. Ex. for using the <code>director</code> property on the <code>Event</code> schema type, supply <code>director</code> as value. If you wish to use a nested object value you can nest like this: <code>director.email</code>. Should the property contain an object of the type <a href=\"https://schema.org/PropertyValue\" target=\"_blank\">PropertyValue</a> the <code>value</code> property will be used by default when creating terms."
+msgstr "Namn på schemaegenskapen som ska användas som en taxonomi. Exempelvis, för att använda egenskapen <code>director</code> på schema-typen <code>Event</code>, ange <code>director</code> som värde. Om du vill använda ett värde från ett nestat objekt kan du nästlat det så här: <code>director.email</code>. Om egenskapen innehåller ett objekt av typen <a href=\"https://schema.org/PropertyValue\" target=\"_blank\">PropertyValue</a>, kommer egenskapen <code>value</code> att användas som standard när termer skapas."
+
+#: AcfFields/php/external-content-settings.php:337
+msgid "ex. director"
+msgstr ""
+
+#: AcfFields/php/external-content-settings.php:344
+msgid "Name (plural)"
+msgstr ""
+
+#: AcfFields/php/external-content-settings.php:365
+msgid "Name (singular)"
+msgstr ""
 
 #: AcfFields/php/hidden-validation.php:8
 #: AcfFields/php/hidden-validation.php:12
@@ -385,8 +481,8 @@ msgid "Activate gutenberg editor"
 msgstr "Aktivera Gutenberg redigerare"
 
 #: AcfFields/php/options-activate-gutenberg.php:24
+#: AcfFields/php/options-comment-settings.php:26
 #: AcfFields/php/options-theme-features.php:27
-#: AcfFields/php/options-theme-features.php:48
 #: Customizer/Sections/Colors.php:172
 #: Customizer/Sections/Divider.php:90
 #: Customizer/Sections/Divider.php:166
@@ -396,7 +492,7 @@ msgid "Disabled"
 msgstr "Inaktiverad"
 
 #: AcfFields/php/options-activate-gutenberg.php:25
-#: Controller/Search.php:13
+#: Controller/Search.php:12
 #: Customizer/Sections/Menu/Quicklinks.php:206
 msgid "All pages"
 msgstr "Alla sidor"
@@ -472,7 +568,7 @@ msgstr "Beskrivning"
 
 #: AcfFields/php/options-menu-floating.php:8
 #: AcfFields/php/options-theme-google-translate.php:61
-#: Theme/Navigation.php:33
+#: Theme/Navigation.php:37
 msgid "Floating menu"
 msgstr "Flytande meny"
 
@@ -2361,16 +2457,6 @@ msgstr "how_to_reg"
 msgid "how_to_vote"
 msgstr "how_to_vote"
 
-#: AcfFields/php/external-content-settings.php:169
-#: AcfFields/php/options-menu-icon.php:486
-msgid "http"
-msgstr "http"
-
-#: AcfFields/php/external-content-settings.php:168
-#: AcfFields/php/options-menu-icon.php:487
-msgid "https"
-msgstr "https"
-
 #: AcfFields/php/options-menu-icon.php:488
 msgid "image"
 msgstr "image"
@@ -3929,6 +4015,7 @@ msgid "slow_motion_video"
 msgstr "slow_motion_video"
 
 #: AcfFields/php/options-menu-icon.php:877
+#: AcfFields/php/user-author-image.php:152
 msgid "smartphone"
 msgstr "smartphone"
 
@@ -4361,7 +4448,7 @@ msgid "toc"
 msgstr "toc"
 
 #: AcfFields/php/options-menu-icon.php:985
-#: Controller/SingularJobPosting.php:32
+#: Controller/SingularJobPosting.php:64
 msgid "today"
 msgstr "idag"
 
@@ -4746,7 +4833,7 @@ msgid "zoom_out_map"
 msgstr "zoom_out_map"
 
 #: AcfFields/php/options-menu-language.php:8
-#: Customizer/Sections/Header/Layout.php:293
+#: Customizer/Sections/Header/Layout.php:305
 msgid "Language Menu"
 msgstr "Språkmeny"
 
@@ -4778,8 +4865,8 @@ msgstr "En länk till tjänsten som används för översättningar, så att anv�
 #: AcfFields/php/options-theme-google-translate.php:59
 #: Customizer/PanelsRegistry.php:435
 #: Customizer/Sections/Search.php:138
-#: Helper/TranslatedLabels.php:47
-#: Theme/Navigation.php:31
+#: Helper/TranslatedLabels.php:49
+#: Theme/Navigation.php:35
 msgid "Mega menu"
 msgstr "Megameny"
 
@@ -4853,11 +4940,11 @@ msgid "Hide in menu"
 msgstr "Dölj i meny"
 
 #: AcfFields/php/options-page-navigation.php:23
-#: Customizer/Sections/Archive.php:96
-#: Customizer/Sections/Archive.php:164
-#: Customizer/Sections/Archive.php:182
-#: Customizer/Sections/Archive.php:207
-#: Customizer/Sections/Archive.php:420
+#: Customizer/Sections/Archive.php:89
+#: Customizer/Sections/Archive.php:157
+#: Customizer/Sections/Archive.php:175
+#: Customizer/Sections/Archive.php:200
+#: Customizer/Sections/Archive.php:413
 msgid "Hide"
 msgstr "Dölj"
 
@@ -4978,8 +5065,8 @@ msgstr "<span style=\"color: #ff0000;\">Välj namn med omsorg. Namnet går inte 
 
 #: AcfFields/php/options-theme-custom-post-type.php:55
 #: AcfFields/php/options-theme-custom-taxonomy.php:56
-#: AcfFields/php/resource-fields.php:602
-#: AcfFields/php/resource-fields.php:1073
+#: AcfFields/php/resource-fields.php:577
+#: AcfFields/php/resource-fields.php:1048
 msgid "Permalänk"
 msgstr "Permalänk"
 
@@ -5154,7 +5241,7 @@ msgid "Display the notice after this many days"
 msgstr "Visa notisen på inlägg äldre än så här många dagar"
 
 #: AcfFields/php/options-theme-custom-post-type.php:388
-#: Helper/TranslatedLabels.php:34
+#: Helper/TranslatedLabels.php:36
 msgid "days"
 msgstr "dagar"
 
@@ -5436,12 +5523,12 @@ msgid "news"
 msgstr "news"
 
 #: AcfFields/php/options-theme-custom-taxonomy.php:195
-#: AcfFields/php/resource-fields.php:1208
+#: AcfFields/php/resource-fields.php:1183
 msgid "pre-school"
 msgstr "pre-school"
 
 #: AcfFields/php/options-theme-custom-taxonomy.php:197
-#: AcfFields/php/resource-fields.php:1209
+#: AcfFields/php/resource-fields.php:1184
 msgid "elementary-school"
 msgstr "elementary-school"
 
@@ -5478,8 +5565,8 @@ msgid "modal-content"
 msgstr "modal-content"
 
 #: AcfFields/php/options-theme-custom-taxonomy.php:219
-#: AcfFields/php/resource-fields.php:279
-#: AcfFields/php/resource-fields.php:821
+#: AcfFields/php/resource-fields.php:254
+#: AcfFields/php/resource-fields.php:796
 msgid "Offentlig"
 msgstr "Offentlig"
 
@@ -5669,13 +5756,25 @@ msgstr "Plugin"
 msgid "MceButtons"
 msgstr "Knappar"
 
-#: AcfFields/php/widget-contact.php:118
-msgid "Lägg till rad"
-msgstr "Lägg till rad"
+#: AcfFields/php/options-theme-features.php:8
+msgid "Theme features"
+msgstr ""
 
-#: AcfFields/php/term-icon-and-colour.php:47
-msgid "Type"
-msgstr "Typ"
+#: AcfFields/php/options-theme-features.php:12
+msgid "Branded e-mails"
+msgstr ""
+
+#: AcfFields/php/options-theme-features.php:16
+msgid "All e-mails sent from WordPress will be branded using the theme appearance settings."
+msgstr ""
+
+#: AcfFields/php/options-theme-features.php:26
+#: Customizer/Sections/Divider.php:89
+#: Customizer/Sections/Divider.php:165
+#: Customizer/Sections/Menu/Behaviour.php:85
+#: Customizer/Sections/Menu/MegaMenu.php:248
+msgid "Enabled"
+msgstr "Aktiverad"
 
 #: AcfFields/php/options-theme-gdpr.php:8
 msgid "GDPR"
@@ -5714,49 +5813,49 @@ msgid "Menu to show translate link in"
 msgstr "Meny att visa översättningslänk i"
 
 #: AcfFields/php/options-theme-google-translate.php:55
-#: Theme/Navigation.php:27
+#: Theme/Navigation.php:31
 msgid "Help menu"
 msgstr "Hjälpmeny"
 
 #: AcfFields/php/options-theme-google-translate.php:56
-#: Theme/Navigation.php:28
+#: Theme/Navigation.php:32
 msgid "Header tabs menu"
 msgstr "Header-tabbar"
 
 #: AcfFields/php/options-theme-google-translate.php:57
-#: Theme/Navigation.php:29
+#: Theme/Navigation.php:33
 msgid "Primary menu"
 msgstr "Primär menu"
 
 #: AcfFields/php/options-theme-google-translate.php:58
-#: Theme/Navigation.php:30
+#: Theme/Navigation.php:34
 msgid "Secondary menu & drawer menu"
 msgstr "Sekundärmeny och panelmeny"
 
 #: AcfFields/php/options-theme-google-translate.php:60
-#: Theme/Navigation.php:32
+#: Theme/Navigation.php:36
 msgid "Dropdown menu"
 msgstr "Rullgardinsmeny"
 
 #: AcfFields/php/options-theme-google-translate.php:62
-#: Theme/Navigation.php:34
+#: Theme/Navigation.php:38
 msgid "Language menu"
 msgstr "Språkmeny"
 
 #: AcfFields/php/options-theme-google-translate.php:63
 #: Customizer/PanelsRegistry.php:441
 #: Customizer/Sections/Search.php:139
-#: Theme/Navigation.php:35
+#: Theme/Navigation.php:39
 msgid "Quicklinks menu"
 msgstr "Snabblänksmeny"
 
 #: AcfFields/php/options-theme-google-translate.php:64
-#: Theme/Navigation.php:36
+#: Theme/Navigation.php:40
 msgid "Drawer (bottom)"
 msgstr "Panelmeny (nedre del)"
 
 #: AcfFields/php/options-theme-google-translate.php:65
-#: Theme/Navigation.php:37
+#: Theme/Navigation.php:41
 msgid "Siteselector"
 msgstr "Webbplatsväljare"
 
@@ -5849,6 +5948,18 @@ msgstr "Inaktivera sidor"
 msgid "Yes, disable pages."
 msgstr "Ja, inaktivera sidor."
 
+#: AcfFields/php/post-type-schema-settings.php:8
+msgid "Post types Schema settings"
+msgstr ""
+
+#: AcfFields/php/post-type-schema-settings.php:12
+msgid "Post type schema"
+msgstr ""
+
+#: AcfFields/php/post-type-schema-settings.php:57
+msgid "Schema type"
+msgstr ""
+
 #: AcfFields/php/resource-fields.php:8
 msgid "Api-resursfält"
 msgstr "Api-resursfält"
@@ -5870,224 +5981,248 @@ msgid "Bifoga"
 msgstr "Bifoga"
 
 #: AcfFields/php/resource-fields.php:41
-#: AcfFields/php/resource-fields.php:89
-#: AcfFields/php/resource-fields.php:130
+#: AcfFields/php/resource-fields.php:74
+#: AcfFields/php/resource-fields.php:107
 msgid "Källa"
 msgstr "Källa"
 
-#: AcfFields/php/resource-fields.php:165
+#: AcfFields/php/resource-fields.php:140
 msgid "Posttypsargument"
 msgstr "Posttypsargument"
 
-#: AcfFields/php/resource-fields.php:198
+#: AcfFields/php/resource-fields.php:173
 msgid "Nyckel"
 msgstr "Nyckel"
 
-#: AcfFields/php/resource-fields.php:202
+#: AcfFields/php/resource-fields.php:177
 msgid "Nyckel för posttyp. Max. 20 tecken, får inte innehålla versaler eller mellanslag."
 msgstr "Nyckel för posttyp. Max. 20 tecken, får inte innehålla versaler eller mellanslag."
 
-#: AcfFields/php/resource-fields.php:218
-#: AcfFields/php/resource-fields.php:739
+#: AcfFields/php/resource-fields.php:193
+#: AcfFields/php/resource-fields.php:714
 msgid "Etikett (plural)"
 msgstr "Etikett (plural)"
 
-#: AcfFields/php/resource-fields.php:238
-#: AcfFields/php/resource-fields.php:759
+#: AcfFields/php/resource-fields.php:213
+#: AcfFields/php/resource-fields.php:734
 msgid "Etikett (singular)"
 msgstr "Etikett (singular)"
 
-#: AcfFields/php/resource-fields.php:258
-#: AcfFields/php/resource-fields.php:800
+#: AcfFields/php/resource-fields.php:233
+#: AcfFields/php/resource-fields.php:775
 msgid "Beskrivning"
 msgstr "Beskrivning"
 
-#: AcfFields/php/resource-fields.php:262
-#: AcfFields/php/resource-fields.php:804
+#: AcfFields/php/resource-fields.php:237
+#: AcfFields/php/resource-fields.php:779
 msgid "En kort beskrivande sammanfattning av vad inläggstypen är."
 msgstr "En kort beskrivande sammanfattning av vad inläggstypen är."
 
-#: AcfFields/php/resource-fields.php:283
-#: AcfFields/php/resource-fields.php:825
+#: AcfFields/php/resource-fields.php:258
+#: AcfFields/php/resource-fields.php:800
 msgid "Om inläggstypen ska vara allmänt sökbar."
 msgstr "Om inläggstypen ska vara allmänt sökbar."
 
-#: AcfFields/php/resource-fields.php:299
-#: AcfFields/php/resource-fields.php:841
+#: AcfFields/php/resource-fields.php:274
+#: AcfFields/php/resource-fields.php:816
 msgid "Hierarkisk"
 msgstr "Hierarkisk"
 
-#: AcfFields/php/resource-fields.php:303
-#: AcfFields/php/resource-fields.php:845
+#: AcfFields/php/resource-fields.php:278
+#: AcfFields/php/resource-fields.php:820
 msgid "Om inläggstypen är hierarkisk. Tillåter att Förälder anges."
 msgstr "Om inläggstypen är hierarkisk. Tillåter att Förälder anges."
 
-#: AcfFields/php/resource-fields.php:319
-#: AcfFields/php/resource-fields.php:861
+#: AcfFields/php/resource-fields.php:294
+#: AcfFields/php/resource-fields.php:836
 msgid "Visa användargränssnitt"
 msgstr "Visa användargränssnitt"
 
-#: AcfFields/php/resource-fields.php:323
-#: AcfFields/php/resource-fields.php:865
+#: AcfFields/php/resource-fields.php:298
+#: AcfFields/php/resource-fields.php:840
 msgid "Huruvida ett standardgränssnitt ska genereras för hantering av denna inläggstyp."
 msgstr "Huruvida ett standardgränssnitt ska genereras för hantering av denna inläggstyp."
 
-#: AcfFields/php/resource-fields.php:339
+#: AcfFields/php/resource-fields.php:314
 msgid "Har arkiv"
 msgstr "Har arkiv"
 
-#: AcfFields/php/resource-fields.php:343
+#: AcfFields/php/resource-fields.php:318
 msgid "Aktiverar posttypsarkiv."
 msgstr "Aktiverar posttypsarkiv."
 
-#: AcfFields/php/resource-fields.php:359
+#: AcfFields/php/resource-fields.php:334
 msgid "Uteslut från sök"
 msgstr "Uteslutet från sök"
 
-#: AcfFields/php/resource-fields.php:363
+#: AcfFields/php/resource-fields.php:338
 msgid "Om inläggstypen ska exkluderas från sökresultat."
 msgstr "Om inläggstypen ska exkluderas från sökresultat."
 
-#: AcfFields/php/resource-fields.php:379
-#: AcfFields/php/resource-fields.php:901
+#: AcfFields/php/resource-fields.php:354
+#: AcfFields/php/resource-fields.php:876
 msgid "Offentligt sökbar"
 msgstr "Offentligt sökbar"
 
-#: AcfFields/php/resource-fields.php:383
-#: AcfFields/php/resource-fields.php:905
+#: AcfFields/php/resource-fields.php:358
+#: AcfFields/php/resource-fields.php:880
 msgid "Huruvida förfrågningar kan utföras på frontend som en del av parse_request()."
 msgstr "Huruvida förfrågningar kan utföras på frontend som en del av parse_request()."
 
-#: AcfFields/php/resource-fields.php:399
-#: AcfFields/php/resource-fields.php:921
+#: AcfFields/php/resource-fields.php:374
+#: AcfFields/php/resource-fields.php:896
 msgid "Visa i navigeringsmenyer"
 msgstr "Visa i navigeringsmenyer"
 
-#: AcfFields/php/resource-fields.php:403
-#: AcfFields/php/resource-fields.php:925
+#: AcfFields/php/resource-fields.php:378
+#: AcfFields/php/resource-fields.php:900
 msgid "Om post_type är tillgänglig för val i navigeringsmenyer."
 msgstr "Om post_type är tillgänglig för val i navigeringsmenyer."
 
-#: AcfFields/php/resource-fields.php:419
-#: AcfFields/php/resource-fields.php:941
+#: AcfFields/php/resource-fields.php:394
+#: AcfFields/php/resource-fields.php:916
 msgid "Visa i menyn"
 msgstr "Visa i menyn"
 
-#: AcfFields/php/resource-fields.php:423
-#: AcfFields/php/resource-fields.php:945
+#: AcfFields/php/resource-fields.php:398
+#: AcfFields/php/resource-fields.php:920
 msgid "Var posttypen ska visas i adminmenyn. show_ui måste vara true."
 msgstr "Var posttypen ska visas i adminmenyn. show_ui måste vara true."
 
-#: AcfFields/php/resource-fields.php:447
-#: AcfFields/php/resource-fields.php:969
+#: AcfFields/php/resource-fields.php:422
+#: AcfFields/php/resource-fields.php:944
 msgid "Visa i adminfältet"
 msgstr "Visa i adminfältet"
 
-#: AcfFields/php/resource-fields.php:451
-#: AcfFields/php/resource-fields.php:973
+#: AcfFields/php/resource-fields.php:426
+#: AcfFields/php/resource-fields.php:948
 msgid "Var inläggstypen ska visas i adminfältet. show_in_menu måste vara true."
 msgstr "Var inläggstypen ska visas i adminfältet. show_in_menu måste vara true."
 
-#: AcfFields/php/resource-fields.php:475
-#: AcfFields/php/resource-fields.php:997
+#: AcfFields/php/resource-fields.php:450
+#: AcfFields/php/resource-fields.php:972
 msgid "Omskrivning"
 msgstr "Omskrivning"
 
-#: AcfFields/php/resource-fields.php:479
-#: AcfFields/php/resource-fields.php:577
-#: AcfFields/php/resource-fields.php:1001
-#: AcfFields/php/resource-fields.php:1048
+#: AcfFields/php/resource-fields.php:454
+#: AcfFields/php/resource-fields.php:552
+#: AcfFields/php/resource-fields.php:976
+#: AcfFields/php/resource-fields.php:1023
 msgid "Hantering av url-omskrivningar för denna posttyp."
 msgstr "Hantering av url-omskrivningar för denna posttyp."
 
-#: AcfFields/php/resource-fields.php:495
+#: AcfFields/php/resource-fields.php:470
 msgid "Position för meny"
 msgstr "Position för meny"
 
-#: AcfFields/php/resource-fields.php:499
+#: AcfFields/php/resource-fields.php:474
 msgid "Den position i menyordningen som inläggstypen ska visas. show_in_menu måste vara true."
 msgstr "Den position i menyordningen som inläggstypen ska visa. show_in_menu måste vara true."
 
-#: AcfFields/php/resource-fields.php:525
-#: AcfFields/php/resource-fields.php:1017
+#: AcfFields/php/resource-fields.php:500
+#: AcfFields/php/resource-fields.php:992
 msgid "Kapacitet"
 msgstr "Kapacitet"
 
-#: AcfFields/php/resource-fields.php:544
-#: AcfFields/php/resource-fields.php:1036
+#: AcfFields/php/resource-fields.php:519
+#: AcfFields/php/resource-fields.php:1011
 msgid "t.ex. \"manage_options\"..."
 msgstr "t.ex. \"manage_options\"..."
 
-#: AcfFields/php/resource-fields.php:552
+#: AcfFields/php/resource-fields.php:527
 msgid "Överordnade inläggstyper"
 msgstr "Överordnade inläggstyper"
 
-#: AcfFields/php/resource-fields.php:556
+#: AcfFields/php/resource-fields.php:531
 msgid "Överordnade inläggstyper används för att bestämma permalänken och omskrivningsreglerna för denna inläggstyp. Om du anger överordnade inläggstyper påverkas omskrivningssluggen genom att den inleds med sluggen för överordnade inläggstyper."
 msgstr "Överordnade inläggstyper används för att bestämma permalänken och omskrivningsreglerna för denna inläggstyp. Om du anger överordnade inläggstyper påverkas omskrivningssluggen genom att den inleds med sluggen för överordnade inläggstyper."
 
-#: AcfFields/php/resource-fields.php:573
-#: AcfFields/php/resource-fields.php:1044
+#: AcfFields/php/resource-fields.php:548
+#: AcfFields/php/resource-fields.php:1019
 msgid "Alternativ för url-omskrivning"
 msgstr "Alternativ för url-omskrivning"
 
-#: AcfFields/php/resource-fields.php:622
-#: AcfFields/php/resource-fields.php:1093
+#: AcfFields/php/resource-fields.php:597
+#: AcfFields/php/resource-fields.php:1068
 msgid "Med front"
 msgstr "Med front"
 
-#: AcfFields/php/resource-fields.php:642
-#: AcfFields/php/resource-fields.php:1113
+#: AcfFields/php/resource-fields.php:617
+#: AcfFields/php/resource-fields.php:1088
 msgid "RSS-flöde"
 msgstr "RSS-flöde"
 
-#: AcfFields/php/resource-fields.php:664
-#: AcfFields/php/resource-fields.php:1135
+#: AcfFields/php/resource-fields.php:639
+#: AcfFields/php/resource-fields.php:1110
 msgid "Query Var"
 msgstr "Query Var"
 
-#: AcfFields/php/resource-fields.php:668
-#: AcfFields/php/resource-fields.php:1139
+#: AcfFields/php/resource-fields.php:643
+#: AcfFields/php/resource-fields.php:1114
 msgid "Ställer in query_var-nyckeln för denna inläggstyp."
 msgstr "Ställ in query_var-nyckeln för denna inläggstyp."
 
-#: AcfFields/php/resource-fields.php:686
+#: AcfFields/php/resource-fields.php:661
 msgid "Argument för taxonomi"
 msgstr "Argument för taxonomi"
 
-#: AcfFields/php/resource-fields.php:719
+#: AcfFields/php/resource-fields.php:694
 msgid "Taxonominyckel"
 msgstr "Taxonominyckel"
 
-#: AcfFields/php/resource-fields.php:723
-#: AcfFields/php/resource-fields.php:743
-#: AcfFields/php/resource-fields.php:763
+#: AcfFields/php/resource-fields.php:698
+#: AcfFields/php/resource-fields.php:718
+#: AcfFields/php/resource-fields.php:738
 msgid "Nyckel för posttyp. Max. 32 tecken, får inte innehålla versaler eller mellanslag."
 msgstr "Nyckel för posttyp. Max. 32 tecken, får inte innehålla versaler eller mellanslag."
 
-#: AcfFields/php/resource-fields.php:779
+#: AcfFields/php/resource-fields.php:754
 msgid "Typ av objekt"
 msgstr "Typ av objekt"
 
-#: AcfFields/php/resource-fields.php:783
+#: AcfFields/php/resource-fields.php:758
 msgid "Post Types to which this taxonomy should be connected to."
 msgstr "Post Types to which this taxonomy should be connected to."
 
-#: AcfFields/php/resource-fields.php:881
+#: AcfFields/php/resource-fields.php:856
 msgid "Visa admin-kolumn"
 msgstr "Visa admin-kolumn"
 
-#: AcfFields/php/resource-fields.php:1157
+#: AcfFields/php/resource-fields.php:1132
 msgid "Attachment arguments"
 msgstr "Argument för bifogade filer"
 
-#: AcfFields/php/resource-fields.php:1190
+#: AcfFields/php/resource-fields.php:1165
 msgid "Post types"
 msgstr "Posttyp"
 
-#: AcfFields/php/resource-fields.php:1194
+#: AcfFields/php/resource-fields.php:1169
 msgid "Choose which post types that should use this source for their attachments."
 msgstr "Välj vilka inläggstyper som ska använda denna källa för sina bilagor."
+
+#: AcfFields/php/resource-fields.php:1178
+msgid "attachment for: pre-school, elementary-school, school-person"
+msgstr ""
+
+#: AcfFields/php/resource-fields.php:1179
+msgid "school-page"
+msgstr ""
+
+#: AcfFields/php/resource-fields.php:1180
+msgid "school-grade"
+msgstr ""
+
+#: AcfFields/php/resource-fields.php:1181
+msgid "school-area"
+msgstr ""
+
+#: AcfFields/php/resource-fields.php:1182
+msgid "school-usp"
+msgstr ""
+
+#: AcfFields/php/resource-fields.php:1185
+msgid "school-person"
+msgstr ""
 
 #: AcfFields/php/term-icon-and-colour.php:8
 msgid "Advanced term settings"
@@ -6096,6 +6231,11 @@ msgstr "Avancerade inställningar för termer"
 #: AcfFields/php/term-icon-and-colour.php:12
 msgid "Colour"
 msgstr "Färg"
+
+#: AcfFields/php/term-icon-and-colour.php:47
+#: AcfFields/php/user-author-image.php:136
+msgid "Type"
+msgstr "Typ"
 
 #: AcfFields/php/term-icon-and-colour.php:61
 #: AcfFields/php/term-icon-and-colour.php:2231
@@ -14610,24 +14750,24 @@ msgstr "Kommer som standard att vara \"Välj <namn på taxonomi>\"."
 msgid "Profile picture"
 msgstr "Profilbild"
 
-#: AcfFields/php/user-author-image.php:36
+#: AcfFields/php/user-author-image.php:39
 msgid "Facebook profile url"
 msgstr "Url till Facebook-profil"
 
-#: AcfFields/php/user-author-image.php:52
+#: AcfFields/php/user-author-image.php:56
 msgid "Linkedin profile url"
 msgstr "Url till LinkedIn-profil"
 
-#: AcfFields/php/user-author-image.php:68
+#: AcfFields/php/user-author-image.php:73
 msgid "Instagram username"
 msgstr "Användarnamn på Instagram"
 
-#: AcfFields/php/user-author-image.php:82
-#: AcfFields/php/user-author-image.php:101
+#: AcfFields/php/user-author-image.php:88
+#: AcfFields/php/user-author-image.php:108
 msgid "@"
 msgstr "@"
 
-#: AcfFields/php/user-author-image.php:87
+#: AcfFields/php/user-author-image.php:93
 msgid "Twitter username"
 msgstr "Användarnamn på Twitter"
 
@@ -14647,9 +14787,14 @@ msgstr "Telefonnummer"
 msgid "Email"
 msgstr "Epost"
 
+#: AcfFields/php/user-author-image.php:188
 #: AcfFields/php/widget-contact.php:100
 msgid "Address"
 msgstr "Adress"
+
+#: AcfFields/php/widget-contact.php:118
+msgid "Lägg till rad"
+msgstr "Lägg till rad"
 
 #: AcfFields/php/widget-contact.php:121
 msgid "Kontakter"
@@ -14854,11 +14999,11 @@ msgstr "Ladda upp bild"
 msgid "Media link"
 msgstr "Medialänk"
 
-#: Admin/Acf/ImageAltTextValidation.php:192
+#: Admin/Acf/ImageAltTextValidation.php:197
 msgid "Please add an alt text to the featured image."
 msgstr "Var god och lägg till en alt-text till bilden."
 
-#: Admin/Acf/ImageAltTextValidation.php:193
+#: Admin/Acf/ImageAltTextValidation.php:198
 msgid "Please add an alt text to the image."
 msgstr "Var god och lägg till en alt-text till bilden."
 
@@ -14901,7 +15046,7 @@ msgstr "Behållare-block"
 msgid "Please fill in all required fields."
 msgstr "Vänligen fyll i alla obligatoriska fält."
 
-#: Admin/LoginTracking.php:32
+#: Admin/LoginTracking.php:35
 msgid "Last Login"
 msgstr "Senaste inloggning"
 
@@ -14912,18 +15057,6 @@ msgstr "Samtyckes ID"
 #: Admin/Options/AttachmentConsent.php:43
 msgid "Consent comment"
 msgstr "Samtyckes kommentar"
-
-#: Admin/Options/Theme.php:46
-#: Admin/Options/Theme.php:47
-#: Customizer/PanelsRegistry.php:282
-#: Helper/TranslatedLabels.php:42
-#: Helper/TranslatedLabels.php:80
-#: Search/General.php:49
-#: Search/General.php:56
-#: Search/General.php:61
-#: Widget/Navigation/Navigation.php:66
-msgid "Search"
-msgstr "Sök"
 
 #: Admin/Options/Theme.php:14
 #: Admin/Options/Theme.php:15
@@ -14942,6 +15075,18 @@ msgstr "Anpassning"
 msgid "Content"
 msgstr "Innehåll"
 
+#: Admin/Options/Theme.php:46
+#: Admin/Options/Theme.php:47
+#: Customizer/PanelsRegistry.php:282
+#: Helper/TranslatedLabels.php:44
+#: Helper/TranslatedLabels.php:82
+#: Search/General.php:49
+#: Search/General.php:56
+#: Search/General.php:61
+#: Widget/Navigation/Navigation.php:66
+msgid "Search"
+msgstr "Sök"
+
 #: Admin/Options/Theme.php:70
 msgid "Custom Post Types"
 msgstr "Egna inläggstyper"
@@ -14954,11 +15099,6 @@ msgstr "Posttyper"
 #: Admin/Options/Theme.php:78
 msgid "Custom Taxonomies"
 msgstr "Egna taxonomies"
-
-#: AcfFields/php/external-content-settings.php:300
-#: Admin/Options/Theme.php:79
-msgid "Taxonomies"
-msgstr "Taxonomies"
 
 #: Admin/Options/Theme.php:86
 msgid "Custom CSS/JS Editor"
@@ -14973,33 +15113,33 @@ msgstr "Egen CSS/JS"
 msgid "PDF Generator Settings"
 msgstr "Inställningar för PDF-generator"
 
-#: Admin/UI/BackEnd.php:57
+#: Admin/UI/BackEnd.php:60
 msgid "Local"
 msgstr "Lokal miljö"
 
-#: Admin/UI/BackEnd.php:61
+#: Admin/UI/BackEnd.php:64
 msgid "Test"
 msgstr "Test"
 
-#: Admin/UI/BackEnd.php:65
+#: Admin/UI/BackEnd.php:68
 msgid "Beta"
 msgstr "Beta"
 
-#: Admin/UI/BackEnd.php:75
-#: Admin/UI/BackEnd.php:80
-#: Admin/UI/BackEnd.php:85
+#: Admin/UI/BackEnd.php:78
+#: Admin/UI/BackEnd.php:83
+#: Admin/UI/BackEnd.php:88
 msgid "Notice"
 msgstr "Notis"
 
-#: Admin/UI/BackEnd.php:75
+#: Admin/UI/BackEnd.php:78
 msgid "You're on a local server."
 msgstr "Detta är en lokal server."
 
-#: Admin/UI/BackEnd.php:80
+#: Admin/UI/BackEnd.php:83
 msgid "This it the test-environment. Your content will not be published."
 msgstr "Detta är en test-miljö. Ditt innehåll kommer inte att publiceras."
 
-#: Admin/UI/BackEnd.php:85
+#: Admin/UI/BackEnd.php:88
 msgid "This it the beta-environment. All functionality is not guaranteed. Possibly, the web page content will be restored and synchronized with the live site on Monday."
 msgstr "Detta är en beta-miljö. All funktionalitet är inte garanterad. Eventuellt kommer webbsidans innehåll att återställas och synkroniseras med live sajten på måndag."
 
@@ -15023,21 +15163,19 @@ msgstr "Genererad PDF"
 msgid "Table of Contents"
 msgstr "Innehållsförteckning"
 
-#: Api/Pdf/PdfGenerator.php:217
-msgid "Other"
-msgstr "Annat"
-
 #: Api/Pdf/PdfGenerator.php:47
 msgid "The PDF generator is missing some suggested dependencies. Please install the following PHP extensions: GD"
 msgstr "PDF-generatorn saknar några föreslagna beroenden. Vänligen installera följande PHP-tillägg: GD"
 
 #: Api/Pdf/PdfGenerator.php:78
-#: Helper/Navigation.php:749
+#: Controller/Navigation/Decorators/Accessibility/AppendPrintMenuItem.php:36
+#: Helper/Navigation.php:738
 msgid "Print"
 msgstr "Skriv ut"
 
 #: Api/Pdf/PdfGenerator.php:79
-#: Helper/Navigation.php:750
+#: Controller/Navigation/Decorators/Accessibility/AppendPrintMenuItem.php:37
+#: Helper/Navigation.php:739
 msgid "Print this page"
 msgstr "Skriv ut den här sidan"
 
@@ -15065,6 +15203,10 @@ msgstr ""
 msgid "When sorting, if a post is missing a term. It will fall under this label."
 msgstr ""
 
+#: Api/Pdf/PdfGenerator.php:217
+msgid "Other"
+msgstr "Annat"
+
 #: Api/Pdf/PdfGenerator.php:252
 msgid "General cover settings"
 msgstr "Allmänna inställningar för omslag"
@@ -15083,7 +15225,7 @@ msgstr "Specifika inställningar för omslag"
 #: Customizer/Sections/Menu/MegaMenu.php:36
 #: Customizer/Sections/Menu/MegaMenu.php:81
 #: Customizer/Sections/Menu/Quicklinks.php:133
-#: Customizer/Sections/SliderHero.php:131
+#: Customizer/Sections/SliderHero.php:140
 msgid "Heading"
 msgstr "Rubrik"
 
@@ -15117,28 +15259,36 @@ msgstr "Välj en annan startsida"
 msgid "View data."
 msgstr "Visa data."
 
-#: Comment/Form.php:36
+#: App.php:659
+msgid "Never"
+msgstr ""
+
+#: BrandedEmails/HtmlTemplate/DefaultHtmlTemplate.php:54
+msgid "This email was sent from %s."
+msgstr ""
+
+#: Comment/Form.php:37
 #: Theme/Icon.php:73
 msgid "Comment"
 msgstr "Kommentar"
 
-#: Comment/Form.php:37
+#: Comment/Form.php:38
 msgid "Your name"
 msgstr "Ditt namn"
 
-#: Comment/Form.php:38
+#: Comment/Form.php:39
 msgid "Your email"
 msgstr "Din e-postadress"
 
-#: Comment/Form.php:39
+#: Comment/Form.php:40
 msgid "Leave a comment"
 msgstr "Lämna en kommentar"
 
-#: Comment/Form.php:40
+#: Comment/Form.php:41
 msgid "You need to login before leaving a comment."
 msgstr "Du behöver logga in för att kunna lämna en kommentar."
 
-#: Comment/Form.php:59
+#: Comment/Form.php:60
 msgid "Cancel reply"
 msgstr "Avbryt"
 
@@ -15160,126 +15310,236 @@ msgstr "Ogilla "
 msgid "Like "
 msgstr "Gilla "
 
-#: Content/CustomPostType.php:56
+#: Content/CustomPostType.php:55
 msgid "Add new"
 msgstr "Skapa ny"
 
-#: Content/CustomPostType.php:57
-#, php-format
+#: Content/CustomPostType.php:56
 msgid "Add new %s"
 msgstr "Skapa ny %s"
 
-#: Content/CustomPostType.php:58
-#, php-format
+#: Content/CustomPostType.php:57
 msgid "New %s"
 msgstr "Ny %s"
 
-#: Content/CustomPostType.php:59
-#, php-format
+#: Content/CustomPostType.php:58
 msgid "Edit %s"
 msgstr "Redigera %s"
 
-#: Content/CustomPostType.php:60
-#, php-format
+#: Content/CustomPostType.php:59
 msgid "View %s"
 msgstr "Visa %s"
 
-#: Content/CustomPostType.php:61
-#, php-format
+#: Content/CustomPostType.php:60
 msgid "All %s"
 msgstr "Alla %s"
 
-#: Content/CustomPostType.php:62
-#, php-format
+#: Content/CustomPostType.php:61
 msgid "Search %s"
 msgstr "Sök %s"
 
-#: Content/CustomPostType.php:63
-#, php-format
+#: Content/CustomPostType.php:62
 msgid "Parent %s"
 msgstr "Förälder %s"
 
-#: Content/CustomPostType.php:64
-#, php-format
+#: Content/CustomPostType.php:63
 msgid "No %s found"
 msgstr "Inga %s hittades"
 
-#: Content/CustomPostType.php:65
-#, php-format
+#: Content/CustomPostType.php:64
 msgid "No %s found in trash"
 msgstr "Inga %s hittades i papperskorgen"
 
-#: Content/CustomPostType.php:86
+#: Content/CustomPostType.php:85
 msgid "Auto generated cpt from user iterface."
 msgstr "Automatiskt genererade posttyper från inställningspanel."
 
 #: Content/RelatedPosts.php:40
-#, php-format
 msgctxt "Default title for related posts, %s being the name of the post type."
 msgid "More %s"
 msgstr "Fler %s"
 
-#: Content/ResourceFromApi/ResourcePostType.php:46
+#: Content/ResourceFromApi/ResourcePostType.php:54
 msgid "API Resources"
 msgstr "API-resurser"
 
-#: Content/ResourceFromApi/ResourcePostType.php:48
+#: Content/ResourceFromApi/ResourcePostType.php:56
 msgid "API Resource"
 msgstr "API-resurs"
 
-#: Controller/Archive.php:474
+#: Controller/Archive.php:502
 msgid "Select"
 msgstr "Välj"
 
-#: Controller/BaseController.php:217
+#: Controller/Archive.php:699
+#, fuzzy
+msgid "Title"
+msgstr "Rubrik"
+
+#: Controller/Archive.php:699
+#: Helper/TranslatedLabels.php:65
+#: Helper/TranslatedLabels.php:76
+msgid "Published"
+msgstr "Publicerad"
+
+#: Controller/BaseController.php:381
 msgid "Search for content"
 msgstr "Sök efter innehåll"
 
-#: Controller/BaseController.php:218
+#: Controller/BaseController.php:382
 msgid "No items found at this query."
 msgstr "Inga inlägg kunde hittas med den här sökfrågan."
 
-#: Controller/BaseController.php:226
+#: Controller/BaseController.php:390
 msgid "Visit"
 msgstr "Besök"
 
-#: Theme/Icon.php:63
-#: Theme/Icon.php:64
-#: Theme/Icon.php:65
-msgid "Phone"
-msgstr "Telefon"
+#: Controller/E404.php:29
+msgid "Go back"
+msgstr "Gå bakåt"
+
+#: Controller/E404.php:36
+#: Helper/TranslatedLabels.php:21
+#: Widget/Brand/Brand.php:47
+#: Widget/Header/Logo.php:46
+msgid "Go to homepage"
+msgstr "Gå till startsidan"
+
+#: Controller/E404.php:46
+#: Helper/TranslatedLabels.php:61
+msgid "Show all"
+msgstr "Visa alla"
+
+#: Controller/E404.php:57
+msgid "Oops! The page you requested cannot be found."
+msgstr "Oj! Sidan som du begärde finns inte."
+
+#: Controller/E404.php:66
+msgid "The %s you are looking for is either moved or removed."
+msgstr "Sidan %s som du letade efter har antagligen flyttats eller blivit borttagen."
+
+#: Controller/Search.php:13
+msgid "The searchquery did not match any content."
+msgstr "Sökfrågan matchade inget innehåll."
+
+#: Controller/Search.php:14
+msgid "Found"
+msgstr "Hittade"
+
+#: Controller/Search.php:15
+msgid "results"
+msgstr "resultat"
+
+#: Controller/Search.php:16
+msgid "Search for"
+msgstr "Sök efter"
+
+#: Controller/Search.php:17
+msgid "View page"
+msgstr "Visa sida"
+
+#: Controller/Singular.php:300
+msgid "This content was published more than %s day ago."
+msgid_plural "This content was published more than %s days ago."
+msgstr[0] "Detta innehåll är äldre än %s dag."
+msgstr[1] "Detta innehåll är äldre än %s dagar."
+
+#: Controller/SingularJobPosting.php:55
+#: Controller/SingularProject.php:70
+msgid "Contact"
+msgstr "Kontakt"
+
+#: Controller/SingularJobPosting.php:56
+msgid "Administration"
+msgstr "Förvaltning"
+
+#: Controller/SingularJobPosting.php:57
+msgid "City"
+msgstr "Ort"
+
+#: Controller/SingularJobPosting.php:58
+msgid "Date posted"
+msgstr "Publicerad"
+
+#: Controller/SingularJobPosting.php:59
+msgid "Employment type"
+msgstr "Omfattning"
+
+#: Controller/SingularJobPosting.php:60
+msgid "Valid through"
+msgstr "Sista ansökningsdag"
+
+#: Controller/SingularJobPosting.php:61
+msgid "Apply"
+msgstr "Ansök"
+
+#: Controller/SingularJobPosting.php:62
+#: Theme/Icon.php:72
+msgid "Information"
+msgstr "Information"
+
+#: Controller/SingularJobPosting.php:63
+msgid "Reference"
+msgstr "Referens"
+
+#: Controller/SingularJobPosting.php:65
+msgid "tomorrow"
+msgstr "imorgon"
+
+#: Controller/SingularJobPosting.php:66
+msgid "expired"
+msgstr "stängd"
+
+#: Controller/SingularPlace.php:167
+#: PostDecorators/ApplyInfoListToPlace.php:35
+msgid "Visit website"
+msgstr "Gå till webbplats"
+
+#: Controller/SingularProject.php:66
+msgid "Status"
+msgstr "Status"
+
+#: Controller/SingularProject.php:67
+msgid "Department"
+msgstr "Drivs av"
+
+#: Controller/SingularProject.php:68
+msgid "Transition"
+msgstr "Omställning"
+
+#: Controller/SingularProject.php:69
+msgid "Categories"
+msgstr "Kategorier"
+
+#: Controller/SingularProject.php:71
+msgid "Estimated budget"
+msgstr "Estimerad budget"
 
 #: Controller/Utils/SingularSchoolData.php:180
 msgid "Contact us"
 msgstr "Kontakta oss"
 
 #: Controller/Utils/SingularSchoolData.php:192
-#, php-format
 msgid "Ca %d children"
 msgstr "Ca %d barn"
 
 #: Controller/Utils/SingularSchoolData.php:193
-#, php-format
 msgid "Ca %d students"
 msgstr "Ca %d elever"
 
 #: Controller/Utils/SingularSchoolData.php:194
-#, php-format
 msgid "%d units"
 msgstr "%d avdelningar"
 
 #: Controller/Utils/SingularSchoolData.php:196
-#, php-format
 msgid "%s profiles"
 msgstr "%s profiler"
 
 #: Controller/Utils/SingularSchoolData.php:197
-#, php-format
 msgid "Opening hours: %s"
 msgstr "Öppettider: %s"
 
 #: Controller/Utils/SingularSchoolData.php:198
-#, php-format
 msgid "Leisure center: %s"
 msgstr "Fritidshem: %s"
 
@@ -15296,13 +15556,11 @@ msgid "Visit us"
 msgstr "Besök oss"
 
 #: Controller/Utils/SingularSchoolData.php:397
-#, php-format
 msgctxt "Shown on pre-schools"
 msgid "Do you want to join %s?"
 msgstr "Vill du söka plats på %s?"
 
 #: Controller/Utils/SingularSchoolData.php:404
-#, php-format
 msgid "Do you want to apply to %s?"
 msgstr "Vill du välja %s?"
 
@@ -15340,8 +15598,8 @@ msgid "Visiting addresses"
 msgstr "Adresser"
 
 #: Controller/Utils/SingularSchoolData.php:597
-#: Helper/TranslatedLabels.php:60
-#: Helper/TranslatedLabels.php:76
+#: Helper/TranslatedLabels.php:62
+#: Helper/TranslatedLabels.php:78
 msgid "Read more"
 msgstr "Läs mer"
 
@@ -15349,66 +15607,13 @@ msgstr "Läs mer"
 msgid "Follow us in social media"
 msgstr "Följ oss i sociala medier"
 
-#: Controller/Utils/SingularSchoolData.php:775
-#, php-format
+#: Controller/Utils/SingularSchoolData.php:774
 msgid "Date and time: %s at %s"
 msgstr "Datum och tid: %s kl. %s"
 
-#: Controller/Utils/SingularSchoolData.php:783
+#: Controller/Utils/SingularSchoolData.php:782
 msgid "Events"
 msgstr "Evenemang"
-
-#: Controller/E404.php:30
-msgid "Go back"
-msgstr "Gå bakåt"
-
-#: Controller/E404.php:37
-#: Helper/TranslatedLabels.php:19
-#: Widget/Brand/Brand.php:47
-#: Widget/Header/Logo.php:46
-msgid "Go to homepage"
-msgstr "Gå till startsidan"
-
-#: Controller/E404.php:47
-#: Helper/TranslatedLabels.php:59
-msgid "Show all"
-msgstr "Visa alla"
-
-#: Controller/E404.php:59
-msgid "Oops! The page you requested cannot be found."
-msgstr "Oj! Sidan som du begärde finns inte."
-
-#: Controller/E404.php:68
-#, php-format
-msgid "The %s you are looking for is either moved or removed."
-msgstr "Sidan %s som du letade efter har antagligen flyttats eller blivit borttagen."
-
-#: Controller/Search.php:14
-msgid "The searchquery did not match any content."
-msgstr "Sökfrågan matchade inget innehåll."
-
-#: Controller/Search.php:15
-msgid "Found"
-msgstr "Hittade"
-
-#: Controller/Search.php:16
-msgid "results"
-msgstr "resultat"
-
-#: Controller/Search.php:17
-msgid "Search for"
-msgstr "Sök efter"
-
-#: Controller/Search.php:18
-msgid "View page"
-msgstr "Visa sida"
-
-#: Controller/Singular.php:300
-#, php-format
-msgid "This content was published more than %s day ago."
-msgid_plural "This content was published more than %s days ago."
-msgstr[0] "Detta innehåll är äldre än %s dag."
-msgstr[1] "Detta innehåll är äldre än %s dagar."
 
 #: Customizer.php:30
 msgid "Install plugin"
@@ -15439,6 +15644,10 @@ msgstr "Arkiv"
 #: Customizer/PanelsRegistry.php:131
 msgid "Manage apperance options on archives."
 msgstr "Hantera design på komponentnivå."
+
+#: Customizer/PanelsRegistry.php:153
+msgid "Manage post types settings"
+msgstr ""
 
 #: Customizer/PanelsRegistry.php:164
 msgid "Module Apperance"
@@ -15545,6 +15754,10 @@ msgstr "Luft"
 msgid "Drop Shadows"
 msgstr "Skuggor"
 
+#: Customizer/PanelsRegistry.php:287
+msgid "Icons"
+msgstr ""
+
 #: Customizer/PanelsRegistry.php:297
 msgid "Component Apperance"
 msgstr "Komponentutseende"
@@ -15556,6 +15769,33 @@ msgstr "Hantera design på komponentnivå."
 #: Customizer/PanelsRegistry.php:303
 msgid "Header"
 msgstr "Sidhuvud"
+
+#: Customizer/PanelsRegistry.php:307
+msgid "Layout"
+msgstr ""
+
+#: Customizer/PanelsRegistry.php:311
+msgid "General"
+msgstr ""
+
+#: Customizer/PanelsRegistry.php:314
+#: Customizer/Sections/Header/Layout.php:182
+msgid "Flexible"
+msgstr ""
+
+#: Customizer/PanelsRegistry.php:324
+#: Customizer/Sections/Field.php:16
+#: Customizer/Sections/Menu/MegaMenu.php:17
+#: Customizer/Sections/Menu/Quicklinks.php:15
+msgid "Appearance"
+msgstr "Utseende"
+
+#: Customizer/PanelsRegistry.php:330
+#: Customizer/Sections/FooterMain.php:56
+#: Customizer/Sections/FooterSub.php:51
+#: Customizer/Sections/Header/Layout.php:314
+msgid "Logotype"
+msgstr "Logotyp"
 
 #: Customizer/PanelsRegistry.php:337
 msgid "Buttons"
@@ -15614,9 +15854,25 @@ msgstr "Under sidhuvud (Heroyta)"
 msgid "Field"
 msgstr "Formulär & Fält"
 
+#: Customizer/PanelsRegistry.php:416
+msgid "Behaviour"
+msgstr ""
+
 #: Customizer/PanelsRegistry.php:417
 msgid "Menu behaviour settings."
 msgstr "Inställningar för menybeteende."
+
+#: Customizer/PanelsRegistry.php:429
+msgid "Breadcrumbs"
+msgstr ""
+
+#: Customizer/PanelsRegistry.php:447
+msgid "Siteselector menu"
+msgstr ""
+
+#: Customizer/PanelsRegistry.php:453
+msgid "Tab menu"
+msgstr ""
 
 #: Customizer/Sections/Archive.php:16
 msgid "Archive heading"
@@ -15626,19 +15882,197 @@ msgstr "Rubrik"
 msgid "Archive lead text"
 msgstr "Brödtext"
 
-#: Customizer/Sections/Archive.php:48
+#: Customizer/Sections/Archive.php:59
+msgid "Format"
+msgstr "Format"
+
+#: Customizer/Sections/Archive.php:63
+msgid "Tall"
+msgstr "Stående"
+
+#: Customizer/Sections/Archive.php:64
+msgid "Square"
+msgstr "Fyrkantig"
+
+#: Customizer/Sections/Archive.php:84
+msgid "Display featured image"
+msgstr "Visa utvald bild"
+
+#: Customizer/Sections/Archive.php:88
+#: Customizer/Sections/Archive.php:156
+#: Customizer/Sections/Archive.php:174
+#: Customizer/Sections/Archive.php:199
+#: Customizer/Sections/Archive.php:412
+msgid "Show"
+msgstr "Visa"
+
+#: Customizer/Sections/Archive.php:108
+msgid "Number of posts to display"
+msgstr "Antalet inlägg på en sida"
+
+#: Customizer/Sections/Archive.php:109
+msgid "How many posts that should be displayed on each page."
+msgstr "Antal inlägg som ska visas på varje sida."
+
+#: Customizer/Sections/Archive.php:123
+#: Customizer/Sections/FooterMain.php:240
+msgid "Number of columns to display"
+msgstr "Antal kolumner i rutnät"
+
+#: Customizer/Sections/Archive.php:124
+msgid "How many columns that the posts should be divided in."
+msgstr "Antal kolumner som innehållet ska delas upp i."
+
+#: Customizer/Sections/Archive.php:151
+msgid "Display map"
+msgstr "Visa karta"
+
+#: Customizer/Sections/Archive.php:152
+msgid "Display an Open Street Map on the archive if applicable."
+msgstr "Visa en OpenStreetMap i arkivet om tillämpligt."
+
+#: Customizer/Sections/Archive.php:169
+msgid "Keep the regular loop"
+msgstr "Behåll standardflödet av poster"
+
+#: Customizer/Sections/Archive.php:170
+msgid "Keep the regular loop of posts on the archive?"
+msgstr "Behålla den vanliga listan med inlägg i arkivet?"
+
+#: Customizer/Sections/Archive.php:194
+msgid "Display Google Maps-link"
+msgstr "Visa Google Maps-länk"
+
+#: Customizer/Sections/Archive.php:195
+msgid "Display a link to Google Maps on each marker on the map?"
+msgstr "Visa en länk till Google Maps på varje markör på kartan?"
+
+#: Customizer/Sections/Archive.php:219
+msgid "Filters"
+msgstr "Filtrering"
+
+#: Customizer/Sections/Archive.php:220
+msgid "Add filters to let the user browse partial content."
+msgstr "Visa filtreringsmöjligheter för slutanvändaren."
+
+#: Customizer/Sections/Archive.php:228
+msgid "Text search"
+msgstr "Fritextsök"
+
+#: Customizer/Sections/Archive.php:229
+msgid "Date range"
+msgstr "Period"
+
+#: Customizer/Sections/Archive.php:246
+msgid "What field type to use for the %s filter."
+msgstr "Vilken fälttyp ska användas för filtret \"%s\"."
+
+#: Customizer/Sections/Archive.php:249
+msgid "Multiselect"
+msgstr "Flervalsväljare"
+
+#: Customizer/Sections/Archive.php:250
+msgid "Single select"
+msgstr "Ettvalsväljare"
+
+#: Customizer/Sections/Archive.php:272
+msgid "Facetting type"
+msgstr "Filtreringsbeteende"
+
+#: Customizer/Sections/Archive.php:273
+msgid "Wheter to broaden/search (or/off) OR taper/filter (and/on) search result when adding multiple selections for facetting."
+msgstr "Om sökresultatet ska breddas (av) eller om sökresultatet ska smalnas av (på) när flera kategorier väljs."
+
+#: Customizer/Sections/Archive.php:277
+msgid "OR"
+msgstr "ELLER"
+
+#: Customizer/Sections/Archive.php:278
+msgid "AND"
+msgstr "OCH"
+
+#: Customizer/Sections/Archive.php:292
+msgid "Taxonomy display"
+msgstr "Visning av taxonomier"
+
+#: Customizer/Sections/Archive.php:293
+msgid "What taxonomies should be displayed?"
+msgstr "Vilka taxonomier ska visas?"
+
+#: Customizer/Sections/Archive.php:312
+msgid "Order By"
+msgstr "Ordna efter"
+
+#: Customizer/Sections/Archive.php:313
+msgid "Select a key/value to order by."
+msgstr "Välj ett värde att sortera efter."
+
+#: Customizer/Sections/Archive.php:328
+msgid "Order direction"
+msgstr "Riktning"
+
+#: Customizer/Sections/Archive.php:329
+msgid "Select decending or ascending order."
+msgstr "Välj om inläggen ska sorteras fallande eller stigande."
+
+#: Customizer/Sections/Archive.php:333
+msgid "Ascending"
+msgstr "Stigande"
+
+#: Customizer/Sections/Archive.php:334
+msgid "Decending"
+msgstr "Fallande"
+
+#: Customizer/Sections/Archive.php:349
+#: Customizer/Sections/Archive.php:380
+msgid "Date"
+msgstr "Datum"
+
+#: Customizer/Sections/Archive.php:350
+msgid "Select source of timestamp for post"
+msgstr "Väl en källa för tidsstämpeln"
+
+#: Customizer/Sections/Archive.php:354
+msgid "Hide date"
+msgstr "Dölj datum"
+
+#: Customizer/Sections/Archive.php:375
+msgid "Date format"
+msgstr "Datumformat"
+
+#: Customizer/Sections/Archive.php:376
+msgid "In what format to display date"
+msgstr "Format för datum"
+
+#: Customizer/Sections/Archive.php:381
+msgid "Date, Time"
+msgstr "Datum, Tid"
+
+#: Customizer/Sections/Archive.php:382
+msgid "Date badge"
+msgstr "Datummärke"
+
+#: Customizer/Sections/Archive.php:407
+msgid "Display reading time"
+msgstr "Visa uppskattad lästid"
+
+#: Customizer/Sections/Archive.php:408
+msgid "Wether to display the estimated reading time for each post"
+msgstr "Om den beräknade lästiden för varje inlägg ska visas"
+
+#: Customizer/Sections/Archive.php:427
 msgid "Compressed"
 msgstr "Komprimerad"
 
-#: Customizer/Sections/Archive.php:49
+#: Customizer/Sections/Archive.php:428
 msgid "Cards"
 msgstr "Kort"
 
-#: Customizer/Sections/Archive.php:50
+#: Customizer/Sections/Archive.php:429
 msgid "News"
 msgstr "Nyheter"
 
-#: Customizer/Sections/Archive.php:51
+#: Customizer/Sections/Archive.php:430
 #: Customizer/Sections/Module/Contacts.php:33
 #: Customizer/Sections/Module/Map.php:16
 #: Customizer/Sections/Module/Posts.php:37
@@ -15647,193 +16081,13 @@ msgstr "Nyheter"
 msgid "List"
 msgstr "Lista"
 
-#: Customizer/Sections/Archive.php:52
+#: Customizer/Sections/Archive.php:431
 msgid "Blocks"
 msgstr "Block"
 
-#: AcfFields/php/external-content-settings.php:244
-#: Customizer/Sections/Archive.php:53
-msgid "Collection"
-msgstr "Samlingar"
-
-#: Customizer/Sections/Archive.php:66
-msgid "Format"
-msgstr "Format"
-
-#: Customizer/Sections/Archive.php:70
-msgid "Tall"
-msgstr "Stående"
-
-#: Customizer/Sections/Archive.php:71
-msgid "Square"
-msgstr "Fyrkantig"
-
-#: Customizer/Sections/Archive.php:91
-msgid "Display featured image"
-msgstr "Visa utvald bild"
-
-#: Customizer/Sections/Archive.php:95
-#: Customizer/Sections/Archive.php:163
-#: Customizer/Sections/Archive.php:181
-#: Customizer/Sections/Archive.php:206
-#: Customizer/Sections/Archive.php:419
-msgid "Show"
-msgstr "Visa"
-
-#: Customizer/Sections/Archive.php:115
-msgid "Number of posts to display"
-msgstr "Antalet inlägg på en sida"
-
-#: Customizer/Sections/Archive.php:116
-msgid "How many posts that should be displayed on each page."
-msgstr "Antal inlägg som ska visas på varje sida."
-
-#: Customizer/Sections/Archive.php:130
-#: Customizer/Sections/FooterMain.php:240
-msgid "Number of columns to display"
-msgstr "Antal kolumner i rutnät"
-
-#: Customizer/Sections/Archive.php:131
-msgid "How many columns that the posts should be divided in."
-msgstr "Antal kolumner som innehållet ska delas upp i."
-
-#: Customizer/Sections/Archive.php:158
-msgid "Display map"
-msgstr "Visa karta"
-
-#: Customizer/Sections/Archive.php:159
-msgid "Display an Open Street Map on the archive if applicable."
-msgstr "Visa en OpenStreetMap i arkivet om tillämpligt."
-
-#: Customizer/Sections/Archive.php:176
-msgid "Keep the regular loop"
-msgstr "Behåll standardflödet av poster"
-
-#: Customizer/Sections/Archive.php:177
-msgid "Keep the regular loop of posts on the archive?"
-msgstr "Behålla den vanliga listan med inlägg i arkivet?"
-
-#: Customizer/Sections/Archive.php:201
-msgid "Display Google Maps-link"
-msgstr "Visa Google Maps-länk"
-
-#: Customizer/Sections/Archive.php:202
-msgid "Display a link to Google Maps on each marker on the map?"
-msgstr "Visa en länk till Google Maps på varje markör på kartan?"
-
-#: Customizer/Sections/Archive.php:226
-msgid "Filters"
-msgstr "Filtrering"
-
-#: Customizer/Sections/Archive.php:227
-msgid "Add filters to let the user browse partial content."
-msgstr "Visa filtreringsmöjligheter för slutanvändaren."
-
-#: Customizer/Sections/Archive.php:235
-msgid "Text search"
-msgstr "Fritextsök"
-
-#: Customizer/Sections/Archive.php:236
-msgid "Date range"
-msgstr "Period"
-
-#: Customizer/Sections/Archive.php:253
-#, php-format
-msgid "What field type to use for the %s filter."
-msgstr "Vilken fälttyp ska användas för filtret \"%s\"."
-
-#: Customizer/Sections/Archive.php:256
-msgid "Multiselect"
-msgstr "Flervalsväljare"
-
-#: Customizer/Sections/Archive.php:257
-msgid "Single select"
-msgstr "Ettvalsväljare"
-
-#: Customizer/Sections/Archive.php:279
-msgid "Facetting type"
-msgstr "Filtreringsbeteende"
-
-#: Customizer/Sections/Archive.php:280
-msgid "Wheter to broaden/search (or/off) OR taper/filter (and/on) search result when adding multiple selections for facetting."
-msgstr "Om sökresultatet ska breddas (av) eller om sökresultatet ska smalnas av (på) när flera kategorier väljs."
-
-#: Customizer/Sections/Archive.php:284
-msgid "OR"
-msgstr "ELLER"
-
-#: Customizer/Sections/Archive.php:285
-msgid "AND"
-msgstr "OCH"
-
-#: Customizer/Sections/Archive.php:299
-msgid "Taxonomy display"
-msgstr "Visning av taxonomier"
-
-#: Customizer/Sections/Archive.php:300
-msgid "What taxonomies should be displayed?"
-msgstr "Vilka taxonomier ska visas?"
-
-#: Customizer/Sections/Archive.php:319
-msgid "Order By"
-msgstr "Ordna efter"
-
-#: Customizer/Sections/Archive.php:320
-msgid "Select a key/value to order by."
-msgstr "Välj ett värde att sortera efter."
-
-#: Customizer/Sections/Archive.php:335
-msgid "Order direction"
-msgstr "Riktning"
-
-#: Customizer/Sections/Archive.php:336
-msgid "Select decending or ascending order."
-msgstr "Välj om inläggen ska sorteras fallande eller stigande."
-
-#: Customizer/Sections/Archive.php:340
-msgid "Ascending"
-msgstr "Stigande"
-
-#: Customizer/Sections/Archive.php:341
-msgid "Decending"
-msgstr "Fallande"
-
-#: Customizer/Sections/Archive.php:356
-#: Customizer/Sections/Archive.php:387
-msgid "Date"
-msgstr "Datum"
-
-#: Customizer/Sections/Archive.php:357
-msgid "Select source of timestamp for post"
-msgstr "Väl en källa för tidsstämpeln"
-
-#: Customizer/Sections/Archive.php:361
-msgid "Hide date"
-msgstr "Dölj datum"
-
-#: Customizer/Sections/Archive.php:382
-msgid "Date format"
-msgstr "Datumformat"
-
-#: Customizer/Sections/Archive.php:383
-msgid "In what format to display date"
-msgstr "Format för datum"
-
-#: Customizer/Sections/Archive.php:388
-msgid "Date, Time"
-msgstr "Datum, Tid"
-
-#: Customizer/Sections/Archive.php:389
-msgid "Date badge"
-msgstr "Datummärke"
-
-#: Customizer/Sections/Archive.php:414
-msgid "Display reading time"
-msgstr "Visa uppskattad lästid"
-
-#: Customizer/Sections/Archive.php:415
-msgid "Wether to display the estimated reading time for each post"
-msgstr "Om den beräknade lästiden för varje inlägg ska visas"
+#: Customizer/Sections/Archive.php:438
+msgid "Schema"
+msgstr ""
 
 #: Customizer/Sections/Borders.php:58
 #: Customizer/Sections/Module/Contacts.php:14
@@ -15908,18 +16162,6 @@ msgstr "Form på knappar."
 msgid "Pill"
 msgstr "Tablett"
 
-#: Customizer/Sections/Divider.php:41
-msgid "Dotted"
-msgstr "Prickad"
-
-#: Customizer/Sections/Divider.php:42
-msgid "Dashed"
-msgstr "Streckad"
-
-#: Customizer/Sections/Divider.php:40
-msgid "Solid"
-msgstr "Solid"
-
 #: Customizer/Sections/Colors.php:15
 msgid "Primary colors"
 msgstr "Primära färger"
@@ -15932,7 +16174,7 @@ msgstr "Primära färger"
 #: Customizer/Sections/Colors.php:386
 #: Customizer/Sections/Colors.php:430
 #: Customizer/Sections/Colors.php:474
-#: Customizer/Sections/SliderHero.php:106
+#: Customizer/Sections/SliderHero.php:115
 #: Customizer/Sections/Typography.php:33
 msgid "Base"
 msgstr "Bas"
@@ -16100,24 +16342,27 @@ msgstr "Avdelarens tjocklek"
 msgid "Border style"
 msgstr "Kantstil"
 
+#: Customizer/Sections/Divider.php:40
+msgid "Solid"
+msgstr "Solid"
+
+#: Customizer/Sections/Divider.php:41
+msgid "Dotted"
+msgstr "Prickad"
+
+#: Customizer/Sections/Divider.php:42
+msgid "Dashed"
+msgstr "Streckad"
+
 #: Customizer/Sections/Divider.php:84
 msgid "Customize text color"
 msgstr "Anpassa kontrastfärg"
 
-#: AcfFields/php/options-theme-features.php:26
-#: AcfFields/php/options-theme-features.php:47
-#: Customizer/Sections/Divider.php:89
-#: Customizer/Sections/Divider.php:165
-#: Customizer/Sections/Menu/Behaviour.php:85
-#: Customizer/Sections/Menu/MegaMenu.php:248
-msgid "Enabled"
-msgstr "Aktiverad"
-
 #: Customizer/Sections/Divider.php:134
 #: Customizer/Sections/FooterMain.php:113
 #: Customizer/Sections/Hero.php:40
-#: Customizer/Sections/SliderDefault.php:115
-#: Customizer/Sections/SliderHero.php:63
+#: Customizer/Sections/SliderDefault.php:111
+#: Customizer/Sections/SliderHero.php:66
 msgid "Text alignment"
 msgstr "Textjustering"
 
@@ -16150,13 +16395,6 @@ msgstr "Rundning av hörn"
 #: Customizer/Sections/Divider.php:250
 msgid "Frame border width"
 msgstr "Storlek på kantlinje"
-
-#: Customizer/PanelsRegistry.php:324
-#: Customizer/Sections/Field.php:16
-#: Customizer/Sections/Menu/MegaMenu.php:17
-#: Customizer/Sections/Menu/Quicklinks.php:15
-msgid "Appearance"
-msgstr "Utseende"
 
 #: Customizer/Sections/Field.php:17
 #: Customizer/Sections/Menu/MegaMenu.php:18
@@ -16216,13 +16454,6 @@ msgstr "Stil för sidfot"
 msgid "Which style of footer to use."
 msgstr "Vilken stil på sidfoten som ska användas."
 
-#: Customizer/PanelsRegistry.php:330
-#: Customizer/Sections/FooterMain.php:56
-#: Customizer/Sections/FooterSub.php:51
-#: Customizer/Sections/Header/Layout.php:301
-msgid "Logotype"
-msgstr "Logotyp"
-
 #: Customizer/Sections/FooterMain.php:73
 #: Customizer/Sections/FooterSub.php:89
 #: Customizer/Sections/Header/Logotype.php:14
@@ -16256,10 +16487,6 @@ msgstr "Sidfots huvud ram"
 #: Customizer/Sections/FooterMain.php:167
 msgid "Add a bottom border for the footer header"
 msgstr "Lägg till en nedre ram till sidfots huvudet"
-
-#: Helper/KirkiConditional.php:49
-msgid "Disable"
-msgstr "Inaktivera"
 
 #: Customizer/Sections/FooterMain.php:188
 msgid "Footer header border size"
@@ -16319,41 +16546,6 @@ msgstr "Positionering av sekundärmeny"
 msgid "Show emblem in hero"
 msgstr "Visa emblem i heroytan"
 
-#: Customizer/Sections/Header/Layout.php:174
-msgid "Apperance"
-msgstr "Utseende"
-
-#: Customizer/Sections/Header/Layout.php:180
-msgid "Casual (Small sites)"
-msgstr "Casual (Små hemsidor)"
-
-#: Customizer/Sections/Header/Layout.php:181
-msgid "Business (large sites)"
-msgstr "Business (Stora hemsidor)"
-
-#: Customizer/Sections/Header/Layout.php:219
-#: Customizer/Sections/Header/Layout.php:247
-msgid "Menu alignment"
-msgstr "Meny justering"
-
-#: Customizer/Sections/Header/Layout.php:253
-msgid "Gap between"
-msgstr "Luft mellan"
-
-#: Customizer/Sections/Header/Layout.php:192
-#: Customizer/Sections/Menu/Quicklinks.php:179
-msgid "Sticky"
-msgstr "Klibbig"
-
-#: Customizer/Sections/Header/Layout.php:193
-msgid "Adjust how the header section should behave when the user scrolls trough the page."
-msgstr "Justera hur sidhuvudet ska bete sig när användaren scrollar på sidan."
-
-#: Customizer/Sections/Header/Layout.php:200
-#: Customizer/Sections/Menu/Quicklinks.php:186
-msgid "Stick to top"
-msgstr "Klibba fast i toppen"
-
 #: Customizer/Sections/Header/Appearance.php:15
 msgid "Choose a background color for the header section of the page."
 msgstr "Välj en bakgrundfärg för sidhuvudet."
@@ -16376,29 +16568,89 @@ msgstr "Välj en alternativ stul för rubriken."
 msgid "Accented"
 msgstr "Accentuerad"
 
+#: Customizer/Sections/Header/Layout.php:69
+msgid "Enable responsive order"
+msgstr ""
+
+#: Customizer/Sections/Header/Layout.php:70
+msgid "Enables a different order of the menu items for mobile devices."
+msgstr ""
+
+#: Customizer/Sections/Header/Layout.php:174
+msgid "Apperance"
+msgstr "Utseende"
+
+#: Customizer/Sections/Header/Layout.php:180
+msgid "Casual (Small sites)"
+msgstr "Casual (Små hemsidor)"
+
+#: Customizer/Sections/Header/Layout.php:181
+msgid "Business (large sites)"
+msgstr "Business (Stora hemsidor)"
+
+#: Customizer/Sections/Header/Layout.php:192
+#: Customizer/Sections/Menu/Quicklinks.php:179
+msgid "Sticky"
+msgstr "Klibbig"
+
+#: Customizer/Sections/Header/Layout.php:193
+msgid "Adjust how the header section should behave when the user scrolls trough the page."
+msgstr "Justera hur sidhuvudet ska bete sig när användaren scrollar på sidan."
+
+#: Customizer/Sections/Header/Layout.php:200
+#: Customizer/Sections/Menu/Quicklinks.php:186
+msgid "Stick to top"
+msgstr "Klibba fast i toppen"
+
+#: Customizer/Sections/Header/Layout.php:219
+#: Customizer/Sections/Header/Layout.php:247
+msgid "Menu alignment"
+msgstr "Meny justering"
+
+#: Customizer/Sections/Header/Layout.php:253
+msgid "Gap between"
+msgstr "Luft mellan"
+
+#: Customizer/Sections/Header/Layout.php:301
+msgid "Primary Menu"
+msgstr ""
+
+#: Customizer/Sections/Header/Layout.php:302
+msgid "Tab Menu"
+msgstr ""
+
+#: Customizer/Sections/Header/Layout.php:303
+#: Customizer/Sections/Header/Layout.php:306
+msgid "Drawer Menu"
+msgstr ""
+
+#: Customizer/Sections/Header/Layout.php:304
+msgid "Mega Menu"
+msgstr ""
+
+#: Customizer/Sections/Header/Layout.php:307
+msgid "Siteselector Menu"
+msgstr ""
+
+#: Customizer/Sections/Header/Layout.php:311
+msgid "Search Form"
+msgstr ""
+
+#: Customizer/Sections/Header/Layout.php:312
+msgid "Search Button"
+msgstr ""
+
+#: Customizer/Sections/Header/Layout.php:313
+msgid "Collapsible Search"
+msgstr "Hopfällbar sökning"
+
+#: Customizer/Sections/Header/Layout.php:315
+msgid "Brand Text"
+msgstr ""
+
 #: Customizer/Sections/Header/Logotype.php:34
 msgid "Header logotype"
 msgstr "Logotyp för sidhuvud"
-
-#: Customizer/Sections/Menu/Tabmenu.php:14
-msgid "Tabmenu - Color"
-msgstr "Tabbmeny - Färg"
-
-#: Customizer/Sections/Menu/Tabmenu.php:31
-msgid "Tabmenu - Type"
-msgstr "Tabbmeny - Typ"
-
-#: Customizer/Sections/Menu/Tabmenu.php:48
-msgid "Trigger button color"
-msgstr "Färg på knapp"
-
-#: Customizer/Sections/Menu/Tabmenu.php:65
-msgid "Trigger button type"
-msgstr "Typ av knapp"
-
-#: Customizer/Sections/Menu/Tabmenu.php:82
-msgid "Trigger button size"
-msgstr "Storlek på knapp"
 
 #: Customizer/Sections/Header/Logotype.php:51
 msgid "Header Logotype Text"
@@ -16478,22 +16730,39 @@ msgstr "Lägg till skuggning på innehåll"
 msgid "Apply rounded corners to content"
 msgstr "Lägg till rundade kanter på innehåll"
 
-#: Customizer/Sections/LoadDesign.php:30
-#: Customizer/Sections/LoadDesign.php:140
+#: Customizer/Sections/Icons.php:21
+msgid "Sharp"
+msgstr ""
+
+#: Customizer/Sections/Icons.php:29
+msgid "Weight"
+msgstr ""
+
+#: Customizer/Sections/Icons.php:36
+#: Customizer/Sections/Typography.php:113
+msgid "Bold"
+msgstr "Fetstil"
+
+#: Customizer/Sections/Icons.php:50
+msgid "Filled icons"
+msgstr ""
+
+#: Customizer/Sections/LoadDesign.php:26
+#: Customizer/Sections/LoadDesign.php:151
 #: Customizer/Sections/PostType.php:17
 #: Customizer/Sections/PostType.php:73
 msgid "Select a design"
 msgstr "Välj en design"
 
-#: Customizer/Sections/LoadDesign.php:43
+#: Customizer/Sections/LoadDesign.php:39
 msgid "Exclude from import"
 msgstr "Exkludera från import"
 
-#: Customizer/Sections/LoadDesign.php:44
+#: Customizer/Sections/LoadDesign.php:40
 msgid "Selected local settings will not be overriden on import."
 msgstr "Valda lokala inställningar kommer inte att skrivas över vid import."
 
-#: Customizer/Sections/LoadDesign.php:149
+#: Customizer/Sections/LoadDesign.php:160
 #: Customizer/Sections/PostType.php:82
 msgid "Error loading options"
 msgstr "Kunde inte ladda in alternativen"
@@ -16526,6 +16795,105 @@ msgstr "Primär logotyp"
 #: Customizer/Sections/Logo.php:33
 msgid "Secondary logo"
 msgstr "Sekundär logotyp"
+
+#: Customizer/Sections/Menu/Behaviour.php:16
+msgid "Use page tree as fallback for primary menu"
+msgstr "Använd sidträd som reserv för primärmeny"
+
+#: Customizer/Sections/Menu/Behaviour.php:32
+msgid "Use page tree as fallback for secondary menu"
+msgstr "Använd sidträd som reserv för sekundärmeny"
+
+#: Customizer/Sections/Menu/Behaviour.php:48
+msgid "Use page tree as fallback for mobile menu"
+msgstr "Använd sidträd som reserv för mobilmeny"
+
+#: Customizer/Sections/Menu/Behaviour.php:64
+msgid "Use page tree as fallback for mega menu"
+msgstr "Använd sidträd som reserv för megameny"
+
+#: Customizer/Sections/Menu/Behaviour.php:80
+msgid "Show subitems as dropdown in main menu"
+msgstr "Visa undermenyalternativ i en dropdown"
+
+#: Customizer/Sections/Menu/Behaviour.php:101
+msgid "Drawer screen sizes"
+msgstr "Utfällbar meny (drawer)"
+
+#: Customizer/Sections/Menu/Behaviour.php:102
+msgid "Select which screen sizes the drawer menu should be visible on."
+msgstr "Välj på vilka skärmstorlekar den utfällbara menyn ska visas."
+
+#: Customizer/Sections/Menu/Behaviour.php:117
+#: Customizer/Sections/Menu/Siteselector.php:115
+#: Customizer/Sections/Radius.php:14
+msgid "Extra small"
+msgstr "Extra liten"
+
+#: Customizer/Sections/Menu/Breadcrumbs.php:17
+msgid "Truncate amount of letters"
+msgstr ""
+
+#: Customizer/Sections/Menu/Breadcrumbs.php:18
+msgid "The actual text will still be shown in a tooltip when hovered."
+msgstr ""
+
+#: Customizer/Sections/Menu/Colors.php:13
+msgid "Sidebar navigation"
+msgstr "Sidomeny"
+
+#: Customizer/Sections/Menu/Colors.php:27
+msgid "Drawer navigation"
+msgstr "Panelnavigation"
+
+#: Customizer/Sections/Menu/Colors.php:41
+msgid "Drawer navigation, secondary"
+msgstr "Panelnavigation, sekundär"
+
+#: Customizer/Sections/Menu/Colors.php:55
+#: Helper/TranslatedLabels.php:48
+msgid "Primary navigation"
+msgstr "Huvudmeny"
+
+#: Customizer/Sections/Menu/Colors.php:68
+#: Helper/TranslatedLabels.php:56
+msgid "Language"
+msgstr "Språk"
+
+#: Customizer/Sections/Menu/Colors.php:79
+msgid "Floating"
+msgstr "Flytande"
+
+#: Customizer/Sections/Menu/Colors.php:103
+msgid "Dropdown"
+msgstr "Dropdown navigation"
+
+#: Customizer/Sections/Menu/Colors.php:160
+#: Customizer/Sections/Menu/Colors.php:190
+#: Customizer/Sections/Menu/Colors.php:239
+msgid "colors"
+msgstr "färger"
+
+#: Customizer/Sections/Menu/Colors.php:166
+#: Customizer/Sections/Menu/Colors.php:196
+#: Customizer/Sections/Menu/Colors.php:245
+msgid "Default Contrast"
+msgstr "Standard kontrasterande"
+
+#: Customizer/Sections/Menu/Colors.php:167
+#: Customizer/Sections/Menu/Colors.php:198
+#: Customizer/Sections/Menu/Colors.php:247
+msgid "Contrasting (Active)"
+msgstr "Kontrasterande (Aktiv)"
+
+#: Customizer/Sections/Menu/Colors.php:197
+#: Customizer/Sections/Menu/Colors.php:246
+msgid "Background (Active)"
+msgstr "Bakgrund (akriv)"
+
+#: Customizer/Sections/Menu/Colors.php:199
+msgid "Background (Expanded)"
+msgstr "Bakgrund (Expanderad)"
 
 #: Customizer/Sections/Menu/MegaMenu.php:37
 msgid "Subitem"
@@ -16584,39 +16952,106 @@ msgstr "Utan omslag"
 msgid "Show on mobile"
 msgstr "Visa på mobil"
 
-#: Customizer/Sections/Menu/Behaviour.php:16
-msgid "Use page tree as fallback for primary menu"
-msgstr "Använd sidträd som reserv för primärmeny"
+#: Customizer/Sections/Menu/Quicklinks.php:42
+msgid "Sticky background"
+msgstr "Klibbig bakgrundsfärg"
 
-#: Customizer/Sections/Menu/Behaviour.php:32
-msgid "Use page tree as fallback for secondary menu"
-msgstr "Använd sidträd som reserv för sekundärmeny"
+#: Customizer/Sections/Menu/Quicklinks.php:44
+msgid "Icon color"
+msgstr "Ikonfärg"
 
-#: Customizer/Sections/Menu/Behaviour.php:48
-msgid "Use page tree as fallback for mobile menu"
-msgstr "Använd sidträd som reserv för mobilmeny"
+#: Customizer/Sections/Menu/Quicklinks.php:45
+msgid "Icon background color"
+msgstr "Bakgrundsfärg för ikon"
 
-#: Customizer/Sections/Menu/Behaviour.php:64
-msgid "Use page tree as fallback for mega menu"
-msgstr "Använd sidträd som reserv för megameny"
+#: Customizer/Sections/Menu/Quicklinks.php:101
+msgid "Amount of gap between"
+msgstr "Avstånd mellan"
 
-#: Customizer/Sections/Menu/Behaviour.php:80
-msgid "Show subitems as dropdown in main menu"
-msgstr "Visa undermenyalternativ i en dropdown"
+#: Customizer/Sections/Menu/Quicklinks.php:180
+msgid "Adjust how the quicklinks menu should behave when the user scrolls trough the page. This option should not be used in combination with a sticky header."
+msgstr "Anpassa hur snabblänksmenyn ska bete sig när användaren scrollar på sidan. Inställningen ”klibbig” ska inte användas i kombination med ett klibbigt sidhuvud."
 
-#: Customizer/Sections/Menu/Behaviour.php:101
-msgid "Drawer screen sizes"
-msgstr "Utfällbar meny (drawer)"
+#: Customizer/Sections/Menu/Quicklinks.php:200
+msgid "Quicklinks location."
+msgstr "Position för snabblänkar."
 
-#: Customizer/Sections/Menu/Behaviour.php:102
-msgid "Select which screen sizes the drawer menu should be visible on."
-msgstr "Välj på vilka skärmstorlekar den utfällbara menyn ska visas."
+#: Customizer/Sections/Menu/Quicklinks.php:205
+msgid "Front page"
+msgstr "Startsidan"
 
-#: Customizer/Sections/Menu/Behaviour.php:117
-#: Customizer/Sections/Menu/Siteselector.php:115
-#: Customizer/Sections/Radius.php:14
-msgid "Extra small"
-msgstr "Extra liten"
+#: Customizer/Sections/Menu/Quicklinks.php:216
+msgid "Quicklinks item direction"
+msgstr "Snabblänkar länk riktning"
+
+#: Customizer/Sections/Menu/Quicklinks.php:220
+msgid "Row"
+msgstr "Rad"
+
+#: Customizer/Sections/Menu/Quicklinks.php:221
+msgid "Column"
+msgstr "Kolumn"
+
+#: Customizer/Sections/Menu/Quicklinks.php:234
+#: Customizer/Sections/Menu/Quicklinks.php:239
+msgid "Overflow top"
+msgstr "Svämma över uppåt"
+
+#: Customizer/Sections/Menu/Siteselector.php:14
+msgid "Select color source"
+msgstr "Väl färgkälla"
+
+#: Customizer/Sections/Menu/Siteselector.php:15
+msgid "Select if you want to use one of the predefined colors, or select one freely."
+msgstr "Välj mellan fördefinierade färger, eller välj en helt fritt."
+
+#: Customizer/Sections/Menu/Siteselector.php:20
+msgid "Predefined colors"
+msgstr "Fördefinierade färger"
+
+#: Customizer/Sections/Menu/Siteselector.php:21
+msgid "Custom color"
+msgstr "Anpassad färg"
+
+#: Customizer/Sections/Menu/Siteselector.php:46
+msgid "Contrasting"
+msgstr "Kontrasterande"
+
+#: Customizer/Sections/Menu/Siteselector.php:77
+msgid "Select color scheme to use for this component."
+msgstr "Välj färgschema för komponenten."
+
+#: Customizer/Sections/Menu/Siteselector.php:110
+msgid "Select amount of border radius"
+msgstr "Välj storlek på kantradie"
+
+#: Customizer/Sections/Menu/Siteselector.php:138
+msgid "Number of items"
+msgstr "Antal"
+
+#: Customizer/Sections/Menu/Siteselector.php:139
+msgid "The maximum number of items to display, before folding to a dropdown."
+msgstr "Det maximala antalet objekt som ska visas innan det viks till en rullgardinsmeny."
+
+#: Customizer/Sections/Menu/Tabmenu.php:14
+msgid "Tabmenu - Color"
+msgstr "Tabbmeny - Färg"
+
+#: Customizer/Sections/Menu/Tabmenu.php:31
+msgid "Tabmenu - Type"
+msgstr "Tabbmeny - Typ"
+
+#: Customizer/Sections/Menu/Tabmenu.php:48
+msgid "Trigger button color"
+msgstr "Färg på knapp"
+
+#: Customizer/Sections/Menu/Tabmenu.php:65
+msgid "Trigger button type"
+msgstr "Typ av knapp"
+
+#: Customizer/Sections/Menu/Tabmenu.php:82
+msgid "Trigger button size"
+msgstr "Storlek på knapp"
 
 #: Customizer/Sections/Module/Contacts.php:39
 #: Customizer/Sections/Module/Inlay.php:20
@@ -16654,63 +17089,6 @@ msgstr "Av"
 #: Customizer/Sections/Module/SectionsSplit.php:14
 msgid "Section Split"
 msgstr "Sektion: Tvådelad"
-
-#: Customizer/Sections/Menu/Colors.php:13
-msgid "Sidebar navigation"
-msgstr "Sidomeny"
-
-#: Customizer/Sections/Menu/Colors.php:27
-msgid "Drawer navigation"
-msgstr "Panelnavigation"
-
-#: Customizer/Sections/Menu/Colors.php:41
-msgid "Drawer navigation, secondary"
-msgstr "Panelnavigation, sekundär"
-
-#: Customizer/Sections/Menu/Colors.php:55
-#: Helper/TranslatedLabels.php:46
-msgid "Primary navigation"
-msgstr "Huvudmeny"
-
-#: Customizer/Sections/Menu/Colors.php:68
-#: Helper/TranslatedLabels.php:54
-msgid "Language"
-msgstr "Språk"
-
-#: Customizer/Sections/Menu/Colors.php:79
-msgid "Floating"
-msgstr "Flytande"
-
-#: Customizer/Sections/Menu/Colors.php:103
-msgid "Dropdown"
-msgstr "Dropdown navigation"
-
-#: Customizer/Sections/Menu/Colors.php:160
-#: Customizer/Sections/Menu/Colors.php:190
-#: Customizer/Sections/Menu/Colors.php:239
-msgid "colors"
-msgstr "färger"
-
-#: Customizer/Sections/Menu/Colors.php:166
-#: Customizer/Sections/Menu/Colors.php:196
-#: Customizer/Sections/Menu/Colors.php:245
-msgid "Default Contrast"
-msgstr "Standard kontrasterande"
-
-#: Customizer/Sections/Menu/Colors.php:167
-#: Customizer/Sections/Menu/Colors.php:198
-#: Customizer/Sections/Menu/Colors.php:247
-msgid "Contrasting (Active)"
-msgstr "Kontrasterande (Aktiv)"
-
-#: Customizer/Sections/Menu/Colors.php:197
-#: Customizer/Sections/Menu/Colors.php:246
-msgid "Background (Active)"
-msgstr "Bakgrund (akriv)"
-
-#: Customizer/Sections/Menu/Colors.php:199
-msgid "Background (Expanded)"
-msgstr "Bakgrund (Expanderad)"
 
 #: Customizer/Sections/OpenStreetMap.php:14
 msgid "Map style"
@@ -16773,50 +17151,29 @@ msgstr "Luft"
 msgid "Remove air"
 msgstr "Ingen luft"
 
-#: Customizer/Sections/Menu/Quicklinks.php:42
-msgid "Sticky background"
-msgstr "Klibbig bakgrundsfärg"
+#: Customizer/Sections/PostType.php:28
+msgid "Styles to copy."
+msgstr ""
 
-#: Customizer/Sections/Menu/Quicklinks.php:44
-msgid "Icon color"
-msgstr "Ikonfärg"
+#: Customizer/Sections/PostType.php:29
+msgid "Select the styles to copy from the selected design."
+msgstr ""
 
-#: Customizer/Sections/Menu/Quicklinks.php:45
-msgid "Icon background color"
-msgstr "Bakgrundsfärg för ikon"
+#: Customizer/Sections/PostType.php:42
+msgid "Follow the design"
+msgstr ""
 
-#: Customizer/Sections/Menu/Quicklinks.php:101
-msgid "Amount of gap between"
-msgstr "Avstånd mellan"
+#: Customizer/Sections/PostType.php:43
+msgid "Keeps updating to the new design every time the customizer is saved."
+msgstr ""
 
-#: Customizer/Sections/Menu/Quicklinks.php:180
-msgid "Adjust how the quicklinks menu should behave when the user scrolls trough the page. This option should not be used in combination with a sticky header."
-msgstr "Anpassa hur snabblänksmenyn ska bete sig när användaren scrollar på sidan. Inställningen ”klibbig” ska inte användas i kombination med ett klibbigt sidhuvud."
+#: Customizer/Sections/PostType.php:51
+msgid "Style globally"
+msgstr ""
 
-#: Customizer/Sections/Menu/Quicklinks.php:200
-msgid "Quicklinks location."
-msgstr "Position för snabblänkar."
-
-#: Customizer/Sections/Menu/Quicklinks.php:205
-msgid "Front page"
-msgstr "Startsidan"
-
-#: Customizer/Sections/Menu/Quicklinks.php:216
-msgid "Quicklinks item direction"
-msgstr "Snabblänkar länk riktning"
-
-#: Customizer/Sections/Menu/Quicklinks.php:220
-msgid "Row"
-msgstr "Rad"
-
-#: Customizer/Sections/Menu/Quicklinks.php:221
-msgid "Column"
-msgstr "Kolumn"
-
-#: Customizer/Sections/Menu/Quicklinks.php:234
-#: Customizer/Sections/Menu/Quicklinks.php:239
-msgid "Overflow top"
-msgstr "Svämma över uppåt"
+#: Customizer/Sections/PostType.php:52
+msgid "This will style modules to have the same color scheme as the loaded design."
+msgstr ""
 
 #: Customizer/Sections/Search.php:22
 msgid "Hero search position"
@@ -16882,42 +17239,6 @@ msgstr "Färg på skugga"
 msgid "What color to use for shadows."
 msgstr "Välj färg för skuggor."
 
-#: Customizer/Sections/Menu/Siteselector.php:14
-msgid "Select color source"
-msgstr "Väl färgkälla"
-
-#: Customizer/Sections/Menu/Siteselector.php:15
-msgid "Select if you want to use one of the predefined colors, or select one freely."
-msgstr "Välj mellan fördefinierade färger, eller välj en helt fritt."
-
-#: Customizer/Sections/Menu/Siteselector.php:20
-msgid "Predefined colors"
-msgstr "Fördefinierade färger"
-
-#: Customizer/Sections/Menu/Siteselector.php:21
-msgid "Custom color"
-msgstr "Anpassad färg"
-
-#: Customizer/Sections/Menu/Siteselector.php:46
-msgid "Contrasting"
-msgstr "Kontrasterande"
-
-#: Customizer/Sections/Menu/Siteselector.php:77
-msgid "Select color scheme to use for this component."
-msgstr "Välj färgschema för komponenten."
-
-#: Customizer/Sections/Menu/Siteselector.php:110
-msgid "Select amount of border radius"
-msgstr "Välj storlek på kantradie"
-
-#: Customizer/Sections/Menu/Siteselector.php:138
-msgid "Number of items"
-msgstr "Antal"
-
-#: Customizer/Sections/Menu/Siteselector.php:139
-msgid "The maximum number of items to display, before folding to a dropdown."
-msgstr "Det maximala antalet objekt som ska visas innan det viks till en rullgardinsmeny."
-
 #: Customizer/Sections/SliderDefault.php:17
 msgid "Gap between slides"
 msgstr "Luft mellan slides"
@@ -16935,16 +17256,16 @@ msgstr "Om värdet sätts till 0 förhandsvisas ingenting av kommande/föregåen
 msgid "Container colour"
 msgstr "Färg för behållare"
 
-#: Customizer/Sections/SliderDefault.php:146
-#: Customizer/Sections/SliderHero.php:85
+#: Customizer/Sections/SliderDefault.php:138
+#: Customizer/Sections/SliderHero.php:91
 msgid "Slide overlay"
 msgstr "Övertäckning slider"
 
-#: Customizer/Sections/SliderDefault.php:177
+#: Customizer/Sections/SliderDefault.php:165
 msgid "Arrow button style"
 msgstr "Stil för navigeringsknapp"
 
-#: Customizer/Sections/SliderDefault.php:204
+#: Customizer/Sections/SliderDefault.php:192
 msgid "Arrow button color"
 msgstr "Färg för navigeringsknapp"
 
@@ -16980,11 +17301,6 @@ msgstr "Om värdet sätts till 0 sker ingen komprimering. Annars visas antalet t
 msgid "Headings"
 msgstr "Rubriker"
 
-#: Customizer/Sections/Icons.php:36
-#: Customizer/Sections/Typography.php:113
-msgid "Bold"
-msgstr "Fetstil"
-
 #: Customizer/Sections/Typography.php:114
 msgid "Use the same font as base but preferably with a higher font weight"
 msgstr "Använd samma typsnitt som bas men mer fetstilad"
@@ -17010,23 +17326,33 @@ msgstr "Ställ in önskad bredd på höger och vänster kolumn. Innehållsytan a
 msgid "Normal"
 msgstr "Normal"
 
-#: Controller/SingularPlace.php:167
-#: PostDecorators/ApplyInfoListToPlace.php:35
-msgid "Visit website"
-msgstr "Gå till webbplats"
+#: ExternalContent/UI/PageRowActionsSyncButton.php:68
+msgid "Sync this post from remote source"
+msgstr "Synka denna post från extern källa"
+
+#: ExternalContent/UI/PostTableSyncButton.php:58
+msgid "Sync all posts from remote source"
+msgstr "Synka alla poster från extern källa"
 
 #: Helper/KirkiConditional.php:35
 msgid "Tailor"
 msgstr "Specialanpassa"
 
-#: Helper/Navigation.php:653
-#: Helper/Navigation.php:788
-#: Helper/Navigation.php:791
-#: Helper/Navigation.php:815
+#: Helper/KirkiConditional.php:49
+msgid "Disable"
+msgstr "Inaktivera"
+
+#: Controller/Navigation/Decorators/Breadcrumb/AppendArchiveMenuItem.php:39
+#: Controller/Navigation/Decorators/Breadcrumb/AppendPageTreeAncestorsMenuItems.php:50
+#: Controller/Navigation/Decorators/Menu/PageTreeAppendMenuItemsCustomTitle.php:49
+#: Helper/Navigation.php:654
+#: Helper/Navigation.php:777
+#: Helper/Navigation.php:780
+#: Helper/Navigation.php:804
 msgid "Untitled page"
 msgstr "Namnlös sida"
 
-#: Helper/Post.php:200
+#: Helper/Post.php:202
 msgid "Item is missing content"
 msgstr "Objektet saknar innehåll"
 
@@ -17035,225 +17361,223 @@ msgid "Less than a minute"
 msgstr "Mindre än en minut"
 
 #: Helper/ReadingTime.php:33
-#, php-format
 msgid "1 minute"
 msgid_plural "%d minutes"
 msgstr[0] "1 minut"
 msgstr[1] "%d minuter"
 
-#: Helper/TranslatedLabels.php:20
+#: Helper/TranslatedLabels.php:22
 msgid "Jump to the main menu"
 msgstr "Hoppa till huvudmenyn"
 
-#: Helper/TranslatedLabels.php:21
+#: Helper/TranslatedLabels.php:23
 msgid "Skip to the main content"
 msgstr "Gå till innehåll"
 
-#: Helper/TranslatedLabels.php:22
+#: Helper/TranslatedLabels.php:24
 msgid "Jump to the main content"
 msgstr "Hoppa till innehåll"
 
-#: Helper/TranslatedLabels.php:23
+#: Helper/TranslatedLabels.php:25
 msgid "Skip to the main menu"
 msgstr "Gå till huvudmeny"
 
-#: Helper/TranslatedLabels.php:24
+#: Helper/TranslatedLabels.php:26
 msgid "Skip to the side menu"
 msgstr "Gå till sidomeny"
 
-#: Helper/TranslatedLabels.php:25
+#: Helper/TranslatedLabels.php:27
 msgid "ago"
 msgstr "sedan"
 
-#: Helper/TranslatedLabels.php:27
+#: Helper/TranslatedLabels.php:28
+msgid "just now"
+msgstr ""
+
+#: Helper/TranslatedLabels.php:29
 msgid "since"
 msgstr "sedan"
 
-#: Helper/TranslatedLabels.php:28
+#: Helper/TranslatedLabels.php:30
 msgid "years"
 msgstr "år"
 
-#: Helper/TranslatedLabels.php:29
+#: Helper/TranslatedLabels.php:31
 msgid "year"
 msgstr "år"
 
-#: Helper/TranslatedLabels.php:30
+#: Helper/TranslatedLabels.php:32
 msgid "months"
 msgstr "månader"
 
-#: Helper/TranslatedLabels.php:31
+#: Helper/TranslatedLabels.php:33
 msgid "month"
 msgstr "månad"
 
-#: Helper/TranslatedLabels.php:32
+#: Helper/TranslatedLabels.php:34
 msgid "weeks"
 msgstr "veckor"
 
-#: Helper/TranslatedLabels.php:33
+#: Helper/TranslatedLabels.php:35
 msgid "week"
 msgstr "vecka"
 
-#: Helper/TranslatedLabels.php:35
+#: Helper/TranslatedLabels.php:37
 msgid "day"
 msgstr "dag"
 
-#: Helper/TranslatedLabels.php:36
+#: Helper/TranslatedLabels.php:38
 msgid "hours"
 msgstr "timmar"
 
-#: Helper/TranslatedLabels.php:37
+#: Helper/TranslatedLabels.php:39
 msgid "hour"
 msgstr "timme"
 
-#: Helper/TranslatedLabels.php:38
+#: Helper/TranslatedLabels.php:40
 msgid "minutes"
 msgstr "minuter"
 
-#: Helper/TranslatedLabels.php:39
+#: Helper/TranslatedLabels.php:41
 msgid "minute"
 msgstr "minut"
 
-#: Helper/TranslatedLabels.php:40
+#: Helper/TranslatedLabels.php:42
 msgid "seconds"
 msgstr "sekunder"
 
-#: Helper/TranslatedLabels.php:41
+#: Helper/TranslatedLabels.php:43
 msgid "second"
 msgstr "sekund"
 
-#: Helper/TranslatedLabels.php:43
+#: Helper/TranslatedLabels.php:45
 msgid "Search on"
 msgstr "Sök på"
 
-#: Helper/TranslatedLabels.php:44
+#: Helper/TranslatedLabels.php:46
 msgid "What are you searching for?"
 msgstr "Vad letar du efter?"
 
-#: Helper/TranslatedLabels.php:45
+#: Helper/TranslatedLabels.php:47
 msgid "Searchresults"
 msgstr "Sökresultat"
 
-#: Helper/TranslatedLabels.php:48
+#: Helper/TranslatedLabels.php:50
 msgid "Useful links"
 msgstr "Användbara länkar"
 
-#: Helper/TranslatedLabels.php:49
+#: Helper/TranslatedLabels.php:51
 msgid "Related links"
 msgstr "Relaterade länkar"
 
-#: Helper/TranslatedLabels.php:50
+#: Helper/TranslatedLabels.php:52
 #: Theme/Icon.php:52
 #: Widget/Header/Links.php:68
 #: Widget/Navigation/Navigation.php:77
 msgid "Menu"
 msgstr "Meny"
 
-#: Helper/TranslatedLabels.php:51
+#: Helper/TranslatedLabels.php:53
 msgid "Site emblem"
 msgstr "Webbplatsens emblem"
 
-#: Helper/TranslatedLabels.php:52
+#: Helper/TranslatedLabels.php:54
 msgid "Close"
 msgstr "Stäng"
 
-#: Helper/TranslatedLabels.php:53
+#: Helper/TranslatedLabels.php:55
 msgid "More Languages"
 msgstr "Fler språk"
 
-#: Helper/TranslatedLabels.php:55
+#: Helper/TranslatedLabels.php:57
 msgid "Expand"
 msgstr "Expandera"
 
-#: Helper/TranslatedLabels.php:56
+#: Helper/TranslatedLabels.php:58
 msgid "You are here: "
 msgstr "Du är här: "
 
-#: Helper/TranslatedLabels.php:57
+#: Helper/TranslatedLabels.php:59
 msgid "Reading time"
 msgstr "Lästid"
 
-#: Helper/TranslatedLabels.php:58
+#: Helper/TranslatedLabels.php:60
 msgctxt "Related (name of posttype)"
 msgid "Related"
 msgstr "Relaterade"
 
-#: Helper/TranslatedLabels.php:61
+#: Helper/TranslatedLabels.php:63
 msgid "Book here"
 msgstr "Boka här"
 
-#: Helper/TranslatedLabels.php:62
-#: Helper/TranslatedLabels.php:75
+#: Helper/TranslatedLabels.php:64
+#: Helper/TranslatedLabels.php:77
 msgid "Updated"
 msgstr "Uppdaterad"
 
-#: Helper/TranslatedLabels.php:63
-#: Helper/TranslatedLabels.php:74
-msgid "Published"
-msgstr "Publicerad"
-
-#: Helper/TranslatedLabels.php:64
+#: Helper/TranslatedLabels.php:66
 msgid "Published by"
 msgstr "Publicerad av"
 
-#: Helper/TranslatedLabels.php:65
+#: Helper/TranslatedLabels.php:67
 msgid "on"
 msgstr "på"
 
-#: Helper/TranslatedLabels.php:66
+#: Helper/TranslatedLabels.php:68
 msgid "of"
 msgstr ""
 
-#: Helper/TranslatedLabels.php:67
-#: Helper/TranslatedLabels.php:81
+#: Helper/TranslatedLabels.php:69
+#: Helper/TranslatedLabels.php:83
 msgid "Filter"
 msgstr "Filtrera"
 
-#: Helper/TranslatedLabels.php:68
-#: Helper/TranslatedLabels.php:83
+#: Helper/TranslatedLabels.php:70
+#: Helper/TranslatedLabels.php:85
 msgid "Reset filter"
 msgstr "Återställ filter"
 
-#: Helper/TranslatedLabels.php:69
+#: Helper/TranslatedLabels.php:71
 msgid "No items found."
 msgstr "Inga hittades."
 
-#: Helper/TranslatedLabels.php:70
+#: Helper/TranslatedLabels.php:72
 msgid "Sort by"
 msgstr "Sortera efter"
 
-#: Helper/TranslatedLabels.php:71
+#: Helper/TranslatedLabels.php:73
 msgid "Random"
 msgstr "Slumpmässig"
 
-#: Helper/TranslatedLabels.php:72
+#: Helper/TranslatedLabels.php:74
 msgid "Name (A-Z)"
 msgstr "Namn (A-Ö)"
 
-#: Helper/TranslatedLabels.php:73
+#: Helper/TranslatedLabels.php:75
 msgid "Publish Date"
 msgstr "Publiceringsdatum"
 
-#: Helper/TranslatedLabels.php:77
+#: Helper/TranslatedLabels.php:79
 msgid "Choose a from date"
 msgstr "Välj ett \"från\" datum"
 
-#: Helper/TranslatedLabels.php:78
+#: Helper/TranslatedLabels.php:80
 msgid "Choose a to date"
 msgstr "Välj ett \"till\" datum"
 
-#: Helper/TranslatedLabels.php:79
+#: Helper/TranslatedLabels.php:81
 msgid "Select a valid date"
 msgstr "Välj ett giltigt datum"
 
-#: Helper/TranslatedLabels.php:82
+#: Helper/TranslatedLabels.php:84
 msgid "Reset search"
 msgstr "Återställ sök"
 
-#: Helper/TranslatedLabels.php:84
+#: Helper/TranslatedLabels.php:86
 msgid "Archive navigation"
 msgstr "Arkivnavigering"
 
-#: Helper/TranslatedLabels.php:85
+#: Helper/TranslatedLabels.php:87
 msgid "Reset"
 msgstr "Återställ"
 
@@ -17263,7 +17587,6 @@ msgid "We need your consent to continue"
 msgstr "Vi behöver ditt godkännande för att ta dig vidare"
 
 #: Oembed/OembedFilters.php:40
-#, php-format
 msgid "This part of the website shows content from %s. By continuing, <a href=\"%s\"> you are accepting GDPR and privacy policy</a>."
 msgstr "Den här delen av hemsidan visar innehåll från %s. Genom att fortsätta godkänner du <a href=\"%s\">GDPR och Sekretesspolicyn</a>."
 
@@ -17273,7 +17596,6 @@ msgid "I understand, continue."
 msgstr "Jag förstår, fortsätt."
 
 #: Oembed/OembedFilters.php:46
-#, php-format
 msgid "This part of the website shows content from another website (%s). By continuing, you are accepting GDPR and privacy policy."
 msgstr "Den här delen av hemsidan visar innehåll från en annan webbplats (%s). Genom att fortsätta godkänner du GDPR och Sekretesspolicyn."
 
@@ -17301,43 +17623,47 @@ msgstr "One Page"
 msgid "Page (centered)"
 msgstr "Centrerad sida"
 
-#: Theme/Enqueue.php:215
+#: Theme/Enqueue.php:101
+msgid "Alignment"
+msgstr ""
+
+#: Theme/Enqueue.php:216
 msgid "Insert Print Page Break tag"
 msgstr "Infoga sidbrytning för utskrift"
 
-#: Theme/Enqueue.php:218
+#: Theme/Enqueue.php:219
 msgid "Are you sure you want to delete the comment?"
 msgstr "Är du säker på att du vill ta bort kommentaren?"
 
-#: Theme/Enqueue.php:219
+#: Theme/Enqueue.php:220
 msgid "Something went wrong, please try again later"
 msgstr "Något gick fel, vänligen försök igen senare"
 
-#: Theme/Enqueue.php:246
+#: Theme/Enqueue.php:247
 msgid "Su"
 msgstr "Sö"
 
-#: Theme/Enqueue.php:247
+#: Theme/Enqueue.php:248
 msgid "Mo"
 msgstr "Må"
 
-#: Theme/Enqueue.php:248
+#: Theme/Enqueue.php:249
 msgid "Tu"
 msgstr "Ti"
 
-#: Theme/Enqueue.php:249
+#: Theme/Enqueue.php:250
 msgid "We"
 msgstr "On"
 
-#: Theme/Enqueue.php:250
+#: Theme/Enqueue.php:251
 msgid "Th"
 msgstr "To"
 
-#: Theme/Enqueue.php:251
+#: Theme/Enqueue.php:252
 msgid "Fr"
 msgstr "Fr"
 
-#: Theme/Enqueue.php:252
+#: Theme/Enqueue.php:253
 msgid "Sa"
 msgstr "Lö"
 
@@ -17383,6 +17709,12 @@ msgstr "Tumme ner"
 msgid "Letter"
 msgstr "Brev"
 
+#: Theme/Icon.php:63
+#: Theme/Icon.php:64
+#: Theme/Icon.php:65
+msgid "Phone"
+msgstr "Telefon"
+
 #: Theme/Icon.php:66
 msgid "Facebook emblem"
 msgstr "Facebookemblem"
@@ -17397,11 +17729,6 @@ msgstr "Chattbubbla"
 #: Theme/Icon.php:71
 msgid "Close cross"
 msgstr "Kryss"
-
-#: Controller/SingularJobPosting.php:30
-#: Theme/Icon.php:72
-msgid "Information"
-msgstr "Information"
 
 #: Theme/Icon.php:74
 msgid "Message"
@@ -17634,16 +17961,15 @@ msgstr "Hus"
 msgid "Undefined"
 msgstr "Ej beskriven"
 
-#: Theme/Navigation.php:113
+#: Theme/Navigation.php:120
 msgid "(above archive posts)"
 msgstr "(ovanför arkivinlägg)"
 
-#: Theme/Navigation.php:120
+#: Theme/Navigation.php:127
 msgid "(sidebar)"
 msgstr "(sidomeny)"
 
-#: Theme/Navigation.php:143
-#, php-format
+#: Theme/Navigation.php:150
 msgid "Content type - %s (sidebar)"
 msgstr "Innehållstyp (%s) (sidomeny)"
 
@@ -17768,392 +18094,62 @@ msgstr "Översätt"
 msgid "New title"
 msgstr "Ny titel"
 
-#: AcfFields/php/external-content-settings.php:8
-msgid "External Content"
+#: AcfFields/php/additional-menu-settings.php:8
+msgid "Additional menu settings"
 msgstr ""
 
-#: AcfFields/php/external-content-settings.php:12
-msgid "External Content Sources"
+#: AcfFields/php/additional-menu-settings.php:12
+msgid "Add menu to additional location"
 msgstr ""
 
-#: AcfFields/php/external-content-settings.php:35
-#: AcfFields/php/post-type-schema-settings.php:35
-msgid "Post type"
+#: AcfFields/php/additional-menu-settings.php:16
+msgid "This allows you to add this menu to another already existing menu."
 msgstr ""
 
-#: AcfFields/php/external-content-settings.php:62
-msgid "Source type"
-msgstr ""
-
-#: AcfFields/php/external-content-settings.php:75
-msgid "json"
-msgstr ""
-
-#: AcfFields/php/external-content-settings.php:76
-msgid "typesense"
-msgstr ""
-
-#: AcfFields/php/external-content-settings.php:91
-msgid "File path"
-msgstr ""
-
-#: AcfFields/php/external-content-settings.php:120
-msgid "API key"
-msgstr ""
-
-#: AcfFields/php/external-content-settings.php:147
-msgid "Protocol"
-msgstr ""
-
-#: AcfFields/php/external-content-settings.php:184
-msgid "Host"
-msgstr ""
-
-#: AcfFields/php/external-content-settings.php:213
-msgid "Port"
-msgstr ""
-
-#: AcfFields/php/external-content-settings.php:273
-msgid "Automatic import schedule"
-msgstr ""
-
-#: AcfFields/php/external-content-settings.php:317
-msgid "Add Taxonomy"
-msgstr ""
-
-#: AcfFields/php/external-content-settings.php:322
-msgid "Create terms from schema property"
-msgstr ""
-
-#: AcfFields/php/external-content-settings.php:349
-msgid "Name (plural)"
-msgstr ""
-
-#: AcfFields/php/external-content-settings.php:370
-msgid "Name (singular)"
-msgstr ""
-
-#: AcfFields/php/options-theme-features.php:8
-msgid "Theme features"
-msgstr ""
-
-#: AcfFields/php/options-theme-features.php:12
-msgid "Branded e-mails"
-msgstr ""
-
-#: AcfFields/php/options-theme-features.php:16
-msgid "All e-mails sent from WordPress will be branded using the theme appearance settings."
-msgstr ""
-
-#: AcfFields/php/options-theme-features.php:32
-msgid "Schema.org data"
-msgstr ""
-
-#: AcfFields/php/options-theme-features.php:36
-msgid ""
-"Allows setting Schema.org formatted data to posts.<br><br>\r\n"
-"<span class=\"dashicons dashicons-info-outline\"></span> This feature will not work as expected if opCache is enabled and <code>opCache.saveComments</code> is set to \"Off\"."
-msgstr ""
-
-#: AcfFields/php/post-type-schema-settings.php:8
-msgid "Post types Schema settings"
-msgstr ""
-
-#: AcfFields/php/post-type-schema-settings.php:12
-msgid "Post type schema"
-msgstr ""
-
-#: AcfFields/php/post-type-schema-settings.php:57
-msgid "Schema type"
-msgstr ""
-
-#: AcfFields/php/resource-fields.php:62
-msgid "post: https://skolor.helsingborg.io/wp-json/wp/v2/posts"
-msgstr ""
-
-#: AcfFields/php/resource-fields.php:63
-msgid "page: https://skolor.helsingborg.io/wp-json/wp/v2/pages"
-msgstr ""
-
-#: AcfFields/php/resource-fields.php:64
-#: AcfFields/php/resource-fields.php:151
-msgid "attachment: https://skolor.helsingborg.io/wp-json/wp/v2/media"
-msgstr ""
-
-#: AcfFields/php/resource-fields.php:65
-msgid "nav_menu_item: https://skolor.helsingborg.io/wp-json/wp/v2/menu-items"
-msgstr ""
-
-#: AcfFields/php/resource-fields.php:66
-msgid "wp_block: https://skolor.helsingborg.io/wp-json/wp/v2/blocks"
-msgstr ""
-
-#: AcfFields/php/resource-fields.php:67
-msgid "wp_template: https://skolor.helsingborg.io/wp-json/wp/v2/templates"
-msgstr ""
-
-#: AcfFields/php/resource-fields.php:68
-msgid "wp_template_part: https://skolor.helsingborg.io/wp-json/wp/v2/template-parts"
-msgstr ""
-
-#: AcfFields/php/resource-fields.php:69
-msgid "wp_navigation: https://skolor.helsingborg.io/wp-json/wp/v2/navigation"
-msgstr ""
-
-#: AcfFields/php/resource-fields.php:70
-msgid "wp_font_family: https://skolor.helsingborg.io/wp-json/wp/v2/font-families"
-msgstr ""
-
-#: AcfFields/php/resource-fields.php:71
-msgid "wp_font_face: https://skolor.helsingborg.io/wp-json/wp/v2/font-families/(?P<font_family_id>[\\d]+)/font-faces"
-msgstr ""
-
-#: AcfFields/php/resource-fields.php:72
-msgid "pre-school: https://skolor.helsingborg.io/wp-json/wp/v2/pre-school"
-msgstr ""
-
-#: AcfFields/php/resource-fields.php:73
-msgid "elementary-school: https://skolor.helsingborg.io/wp-json/wp/v2/elementary-school"
-msgstr ""
-
-#: AcfFields/php/resource-fields.php:74
-msgid "person: https://skolor.helsingborg.io/wp-json/wp/v2/person"
-msgstr ""
-
-#: AcfFields/php/resource-fields.php:75
-msgid "modal-content: https://skolor.helsingborg.io/wp-json/wp/v2/modal-content"
-msgstr ""
-
-#: AcfFields/php/resource-fields.php:110
-msgid "category: https://skolor.helsingborg.io/wp-json/wp/v2/categories"
-msgstr ""
-
-#: AcfFields/php/resource-fields.php:111
-msgid "post_tag: https://skolor.helsingborg.io/wp-json/wp/v2/tags"
-msgstr ""
-
-#: AcfFields/php/resource-fields.php:112
-msgid "nav_menu: https://skolor.helsingborg.io/wp-json/wp/v2/menus"
-msgstr ""
-
-#: AcfFields/php/resource-fields.php:113
-msgid "wp_pattern_category: https://skolor.helsingborg.io/wp-json/wp/v2/wp_pattern_category"
-msgstr ""
-
-#: AcfFields/php/resource-fields.php:114
-msgid "area: https://skolor.helsingborg.io/wp-json/wp/v2/area"
-msgstr ""
-
-#: AcfFields/php/resource-fields.php:115
-msgid "usp: https://skolor.helsingborg.io/wp-json/wp/v2/usp"
-msgstr ""
+#: AcfFields/php/options-comment-settings.php:8
+msgid "Comment Settings"
+msgstr "Kommentarsinställningar"
 
-#: AcfFields/php/resource-fields.php:116
-msgid "grade: https://skolor.helsingborg.io/wp-json/wp/v2/grade"
-msgstr ""
-
-#: AcfFields/php/resource-fields.php:1203
-msgid "attachment for: pre-school, elementary-school, school-person"
-msgstr ""
-
-#: AcfFields/php/resource-fields.php:1204
-msgid "school-page"
-msgstr ""
-
-#: AcfFields/php/resource-fields.php:1205
-msgid "school-grade"
-msgstr ""
-
-#: AcfFields/php/resource-fields.php:1206
-msgid "school-area"
-msgstr ""
-
-#: AcfFields/php/resource-fields.php:1207
-msgid "school-usp"
-msgstr ""
-
-#: AcfFields/php/resource-fields.php:1210
-msgid "school-person"
-msgstr ""
-
-#: App.php:529
-msgid "Never"
-msgstr ""
-
-#: ExternalContent/UI/PageRowActionsSyncButton.php:44
-msgid "Sync this post from remote source"
-msgstr ""
-
-#: BrandedEmails/HtmlTemplate/DefaultHtmlTemplate.php:54
-msgid "This email was sent from %s."
-msgstr ""
-
-#: Controller/SingularJobPosting.php:23
-msgid "Contact"
-msgstr "Kontakt"
-
-#: Controller/SingularJobPosting.php:24
-msgid "Administration"
-msgstr "Förvaltning"
-
-#: Controller/SingularJobPosting.php:25
-msgid "City"
-msgstr "Ort"
-
-#: Controller/SingularJobPosting.php:26
-msgid "Date posted"
-msgstr "Publicerad"
-
-#: Controller/SingularJobPosting.php:27
-msgid "Employment type"
-msgstr "Omfattning"
-
-#: Controller/SingularJobPosting.php:28
-msgid "Valid through"
-msgstr "Sista ansökningsdag"
-
-#: Controller/SingularJobPosting.php:29
-msgid "Apply"
-msgstr "Ansök"
-
-#: Controller/SingularJobPosting.php:31
-msgid "Reference"
-msgstr "Referens"
-
-#: Customizer/PanelsRegistry.php:153
-msgid "Manage post types settings"
-msgstr ""
-
-#: Customizer/PanelsRegistry.php:287
-msgid "Icons"
-msgstr ""
-
-#: Customizer/PanelsRegistry.php:307
-msgid "Layout"
-msgstr ""
-
-#: Customizer/PanelsRegistry.php:311
-msgid "General"
-msgstr ""
-
-#: Customizer/PanelsRegistry.php:314
-#: Customizer/Sections/Header/Layout.php:182
-msgid "Flexible"
-msgstr ""
-
-#: Customizer/PanelsRegistry.php:416
-msgid "Behaviour"
-msgstr ""
-
-#: Customizer/PanelsRegistry.php:429
-msgid "Breadcrumbs"
-msgstr ""
-
-#: Customizer/PanelsRegistry.php:447
-msgid "Siteselector menu"
-msgstr ""
-
-#: Customizer/PanelsRegistry.php:453
-msgid "Tab menu"
-msgstr ""
-
-#: Customizer/Sections/Header/Layout.php:69
-msgid "Enable responsive order"
-msgstr ""
-
-#: Customizer/Sections/Header/Layout.php:70
-msgid "Enables a different order of the menu items for mobile devices."
-msgstr ""
-
-#: Customizer/Sections/Header/Layout.php:289
-msgid "Primary Menu"
-msgstr ""
-
-#: Customizer/Sections/Header/Layout.php:290
-msgid "Tab Menu"
-msgstr ""
-
-#: Customizer/Sections/Header/Layout.php:291
-#: Customizer/Sections/Header/Layout.php:294
-msgid "Drawer Menu"
-msgstr ""
-
-#: Customizer/Sections/Header/Layout.php:292
-msgid "Mega Menu"
-msgstr ""
-
-#: Customizer/Sections/Header/Layout.php:295
-msgid "Siteselector Menu"
-msgstr ""
-
-#: Customizer/Sections/Header/Layout.php:299
-msgid "Search Form"
-msgstr ""
-
-#: Customizer/Sections/Header/Layout.php:300
-msgid "Search Button"
-msgstr ""
-
-#: Customizer/Sections/Header/Layout.php:302
-msgid "Brand Text"
-msgstr ""
-
-#: Customizer/Sections/Icons.php:21
-msgid "Sharp"
-msgstr ""
-
-#: Customizer/Sections/Icons.php:29
-msgid "Weight"
-msgstr ""
-
-#: Customizer/Sections/Icons.php:50
-msgid "Filled icons"
-msgstr ""
-
-#: Customizer/Sections/Menu/Breadcrumbs.php:17
-msgid "Truncate amount of letters"
-msgstr ""
-
-#: Customizer/Sections/Menu/Breadcrumbs.php:18
-msgid "The actual text will still be shown in a tooltip when hovered."
-msgstr ""
+#: AcfFields/php/options-comment-settings.php:32
+msgid "Hide discussion for logged out users"
+msgstr "Dölj diskussioner för utloggade användare"
 
-#: Customizer/Sections/PostType.php:28
-msgid "Styles to copy."
+#: Controller/Navigation/Decorators/Breadcrumb/AppendHomeIconMenuItem.php:35
+msgid "Home"
 msgstr ""
 
-#: Customizer/Sections/PostType.php:29
-msgid "Select the styles to copy from the selected design."
+#: ImageConvert/ImageConvertFilter.php:137
+msgid "Image files must be smaller than %s"
 msgstr ""
 
-#: Customizer/Sections/PostType.php:42
-msgid "Follow the design"
-msgstr ""
+#: AcfFields/php/options-comment-settings.php:12
+msgid "Disable discussion feature"
+msgstr "Stäng av kommentarsfunktionalitet"
 
-#: Customizer/Sections/PostType.php:43
-msgid "Keeps updating to the new design every time the customizer is saved."
-msgstr ""
+#: AcfFields/php/user-author-image.php:8
+msgid "Additional user information"
+msgstr "Övrig användarinformation"
 
-#: Customizer/Sections/PostType.php:51
-msgid "Style globally"
-msgstr ""
+#: AcfFields/php/user-author-image.php:113
+msgid "Phone numbers"
+msgstr "Telefonnummer"
 
-#: Customizer/Sections/PostType.php:52
-msgid "This will style modules to have the same color scheme as the loaded design."
-msgstr ""
+#: AcfFields/php/user-author-image.php:149
+msgid "Cell phone"
+msgstr "Mobiltelefon"
 
-#: Helper/TranslatedLabels.php:26
-msgid "just now"
-msgstr ""
+#: AcfFields/php/user-author-image.php:150
+msgid "Landline"
+msgstr "Fast telefon"
 
-#: Theme/Enqueue.php:101
-msgid "Alignment"
-msgstr ""
+#: AcfFields/php/user-author-image.php:165
+msgid "Number"
+msgstr "Nummer"
 
-#: Controller/SingularJobPosting.php:33
-msgid "tomorrow"
-msgstr "imorgon"
+#: AcfFields/php/user-author-image.php:209
+msgid "Visiting Address"
+msgstr "Besöksadress"
 
-#: Controller/SingularJobPosting.php:34
-msgid "expired"
-msgstr "stängd"
+#: AcfFields/php/options-comment-settings.php:16
+msgid "Disable discussion settings page, comment form and posted comments for all post types."
+msgstr "Stäng av inställningssida för kommentarer, kommentarsformulär och inskickade kommentarer för alla posttyper."

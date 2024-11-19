@@ -4,11 +4,17 @@ namespace Municipio\Customizer\Sections;
 
 use Municipio\Customizer\KirkiField;
 
+/**
+ * Archive section.
+ */
 class Archive
 {
     public $sectionId;
 
-    public function __construct(string $sectionID, object $archive)
+    /**
+     * Constructor.
+     */
+    public function __construct(string $sectionID, private object $archive)
     {
         KirkiField::addField([
             'type'     => 'text',
@@ -43,15 +49,8 @@ class Archive
             'settings' => 'archive_' . $archive->name . '_style',
             'label'    => esc_html__('Style', 'municipio'),
             'section'  => $sectionID,
+            'choices'  => $this->getArchiveViewChoices(),
             'default'  => 'cards',
-            'choices'  => [
-                'compressed' => esc_html__('Compressed', 'municipio'),
-                'cards'      => esc_html__('Cards', 'municipio'),
-                'newsitem'   => esc_html__('News', 'municipio'),
-                'list'       => esc_html__('List', 'municipio'),
-                'grid'       => esc_html__('Blocks', 'municipio'),
-                'collection' => esc_html__('Collection', 'municipio')
-            ],
             'output'   => [
                 [
                     'type'      => 'controller',
@@ -426,5 +425,33 @@ class Archive
                 ]
             ]
         ]);
+    }
+
+    /**
+     * Get the archive view choices
+     *
+     * @return array
+     */
+    private function getArchiveViewChoices(): array
+    {
+        $appearanceOptions = [
+            'box'        => esc_html__('Box', 'municipio'),
+            'compressed' => esc_html__('Compressed', 'municipio'),
+            'cards'      => esc_html__('Cards', 'municipio'),
+            'newsitem'   => esc_html__('News', 'municipio'),
+            'listitem'   => esc_html__('Listitems', 'municipio'),
+            'list'       => esc_html__('List', 'municipio'),
+            'grid'       => esc_html__('Blocks', 'municipio'),
+            'collection' => esc_html__('Collection', 'municipio'),
+            'segment'    => esc_html__('Segment', 'municipio'),
+        ];
+
+        $schemaType = \Municipio\SchemaData\Helper\GetSchemaType::getSchemaTypeFromPostType($this->archive->name);
+
+        if ($schemaType) {
+            $appearanceOptions = array_merge(['schema' => esc_html__('Schema', 'municipio')], $appearanceOptions);
+        }
+
+        return $appearanceOptions;
     }
 }

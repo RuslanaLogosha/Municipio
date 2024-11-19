@@ -8,6 +8,9 @@ class General
 {
     public static $url2text = false;
 
+    /**
+     * Constructor.
+     */
     public function __construct()
     {
         add_filter('wp_dropdown_pages', array($this, 'pageForPostsDropdown'), 10, 3);
@@ -22,7 +25,6 @@ class General
             }
 
             $imageId = get_user_meta($userId, 'user_profile_picture_id', true);
-            delete_user_meta($userId, 'user_profile_picture_id');
 
             if (!$imageId) {
                 return;
@@ -41,8 +43,6 @@ class General
         add_action('add_meta_boxes', array($this, 'removeUnwantedModuleMetaboxes'));
 
         add_action('admin_footer', array($this, 'setIrisDefaultColorPalette'));
-
-
     }
 
     /**
@@ -52,8 +52,8 @@ class General
 
     public function setIrisDefaultColorPalette()
     {
-        $palettesToGet = ['color_palette_primary','color_palette_secondary'];
-        $colorPalettes = \Municipio\Helper\Color::getPalettes($palettesToGet);
+        $palettesToGet          = ['color_palette_primary','color_palette_secondary'];
+        $colorPalettes          = \Municipio\Helper\Color::getPalettes($palettesToGet);
         $colorPalettesSanitized = array_filter($colorPalettes, fn ($value) => is_array($value) && !empty($value));
 
         if (!empty($colorPalettesSanitized)) {
@@ -81,7 +81,7 @@ class General
      */
     public function removeUnwantedModuleMetaboxes($postType)
     {
-        $publicPostTypes = array_keys(\Municipio\Helper\PostType::getPublic());
+        $publicPostTypes   = array_keys(\Municipio\Helper\PostType::getPublic());
         $publicPostTypes[] = 'page';
 
         if (!in_array($postType, $publicPostTypes)) {
@@ -130,7 +130,7 @@ class General
         }
 
         $r['post_status'] = array('publish', 'private');
-        $pages = get_pages($r);
+        $pages            = get_pages($r);
 
         $class = '';
         if (! empty($r['class'])) {

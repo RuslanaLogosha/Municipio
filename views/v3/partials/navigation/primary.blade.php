@@ -1,7 +1,7 @@
 <nav aria-label="{{ $lang->primaryNavigation }}" 
     id="main-menu"
     class="{{
-        implode(',', $primaryMenuClassList ?? 
+        implode(' ', $primaryMenuClassList ?? 
             [
                 'u-display--none@xs', 
                 'u-display--none@sm', 
@@ -11,7 +11,7 @@
 >
     @nav([
         'id' => 'menu-primary',
-        'items' => $primaryMenuItems,
+        'items' => $primaryMenu['items'],
         'allowStyle' => true,
         'direction' => 'horizontal',
         'classList' => array_merge(

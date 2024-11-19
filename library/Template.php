@@ -2,22 +2,38 @@
 
 namespace Municipio;
 
-use AcfService\Contracts\GetField;
+use WpService\WpService;
+use AcfService\AcfService;
 use ComponentLibrary\Init;
 use HelsingborgStad\BladeService\BladeServiceInterface;
 use Municipio\Config\Features\SchemaData\SchemaDataConfigInterface;
+use Municipio\Controller\Navigation\MenuBuilderInterface;
+use Municipio\Controller\Navigation\MenuDirector;
 use Municipio\Helper\Controller as ControllerHelper;
 use Municipio\Helper\Template as TemplateHelper;
-use WpService\Contracts\GetPostType;
 
+/**
+ * Class Template
+ * @package Municipio
+ */
 class Template
 {
     private ?BladeServiceInterface $bladeEngine = null;
     private ?array $viewPaths                   = null;
 
+    /**
+     * Template constructor.
+     * @param MenuBuilderInterface $menuBuilder
+     * @param MenuDirector $menuDirector
+     * @param AcfService $acfService
+     * @param WpService $wpService
+     * @param SchemaDataConfigInterface $schemaDataConfig
+     */
     public function __construct(
-        private GetField $acfService,
-        private GetPostType $wpService,
+        private MenuBuilderInterface $menuBuilder,
+        private MenuDirector $menuDirector,
+        private AcfService $acfService,
+        private WpService $wpService,
         private SchemaDataConfigInterface $schemaDataConfig
     ) {
         //Init custom templates & views
@@ -130,7 +146,7 @@ class Template
     */
     public function loadController(string $template = ''): array
     {
-        if (!is_post_publicly_viewable() && !is_user_logged_in() && !is_search()) {
+        if (!is_post_publicly_viewable() && !is_user_logged_in() && !is_search() && !is_archive()) {
             $template = '404';
         }
 
@@ -190,13 +206,13 @@ class Template
             [
                 'condition'       => true,
                 'controllerClass' => \Municipio\Controller\BaseController::class,
-                'controllerPath'  => ControllerHelper::locateController('BaseController')
+                'controllerPath'  => ControllerHelper::locateController('BaseController'),
             ]
         ];
 
         foreach ($controllers as $controller) {
             if ((bool) $controller['condition']) {
-                $instance = self::createController($controller, $template);
+                $instance = $this->createController($controller, $template);
                 if (!empty($controller['view'])) {
                     $template = $controller['view'];
                 } elseif (!empty($instance->view)) {
@@ -230,7 +246,7 @@ class Template
      *
      * @return object An object of the controller class.
      */
-    private static function createController(array $c, string $template = ''): ?object
+    private function createController(array $c, string $template = ''): ?object
     {
         if (!isset($c['controllerPath']) || !is_file($c['controllerPath'])) {
             return null;
@@ -243,7 +259,7 @@ class Template
             '3.0',
             'Municipio/blade/afterLoadController'
         );
-        return new $c['controllerClass']();
+        return new $c['controllerClass']($this->menuBuilder, $this->menuDirector, $this->wpService, $this->acfService);
     }
     /**
      * @param $view
@@ -389,6 +405,12 @@ class Template
         return $property->getValue($obj);
     }
 
+    /**
+     * Cleans the view path by removing the base path and file extension.
+     *
+     * @param string $view The view path to be cleaned.
+     * @return string The cleaned view path.
+     */
     public function cleanViewPath($view)
     {
         $viewPaths = \Municipio\Helper\Template::getViewPaths();
@@ -399,7 +421,6 @@ class Template
         $view = str_replace('.blade.php', '', $view);
         return $view;
     }
-
 
     /**
      * Get Viewpaths and Blade engine runtime.

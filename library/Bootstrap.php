@@ -45,6 +45,13 @@ $wpService  = new NativeWpService();
 $acfService = new NativeAcfService();
 
 /**
+ * Service helpers.
+ */
+\Municipio\Helper\AcfService::set($acfService);
+\Municipio\Helper\WpService::set($wpService);
+\Municipio\SchemaData\Helper\GetSchemaType::setAcfService($acfService);
+
+/**
  * Acf auto import and export
  */
 add_action('init', function () use ($wpService) {
@@ -98,9 +105,9 @@ add_action('init', function () use ($wpService) {
         'options-menu-style'                         => 'group_61dc486660615',
         'options-menu-floating'                      => 'group_60c86946524a0',
         'options-menu-mega'                          => 'group_6502be085ee3b',
-        'options-menu-description'                   => 'group_650296216899c',
         'options-menu-language'                      => 'group_6141cc9c72cc3',
         'options-api-resources-apis'                 => 'group_653a1673dc501',
+        'options-comment-settings'                   => 'group_67173bdc92fde',
         'options-customize-header'                   => 'group_5afa93c0a25e1',
         'options-customize-footer'                   => 'group_5afa94c88e1aa',
         'resource-fields'                            => 'group_653a509450198',
@@ -113,7 +120,8 @@ add_action('init', function () use ($wpService) {
         'navigation-widget'                          => 'group_5ae64000dd723',
         'widget-media'                               => 'group_5b2b70c0bde2f',
         'media-attachments'                          => 'group_650857c9f2cce',
-        'hidden-validation'                          => 'group_654a2a57e6897'
+        'hidden-validation'                          => 'group_654a2a57e6897',
+        'additional-menu-settings'                   => 'group_66e05ac66c932'
     ));
 
     $acfExportManager->autoExport($autoExportIds);
@@ -124,22 +132,25 @@ add_action('init', function () use ($wpService) {
  * Initialize app
  */
 if (function_exists('get_field')) {
+    global $wpdb;
+
     new Municipio\App(
         $wpService,
         $acfService,
         new HooksRegistrar(),
         new \Municipio\AcfFieldContentModifiers\Registrar($wpService),
-        new \Municipio\Config\Features\SchemaData\SchemaDataConfigService($wpService)
+        new \Municipio\Config\Features\SchemaData\SchemaDataConfigService($wpService),
+        $wpdb
     );
 } else {
-    if (!(defined('WP_CLI') && WP_CLI)) {
+    if (!(defined('WP_CLI') && constant('WP_CLI'))) {
         if (is_admin()) {
             add_action('admin_notices', function () {
-                echo '<div class="notice notice-error"><p>To run <strong>Municipio</strong> theme, please install & activate the <a href="http://www.advancedcustomfields.com/pro/">Advanced Custom Fields <strong>PRO</strong></a> plugin.</p></div>';
+                echo '<div class="notice notice-error"><p>To run <strong>Municipio</strong> theme, please install & activate the <a href="http://www.advancedcustomfields.com/pro/">Advanced Custom Fields <strong>PRO</strong></a> plugin.</p></div>'; // phpcs:ignore
             });
         }
-        if (!is_admin() && $_SERVER["SCRIPT_FILENAME"] != ABSPATH . "wp-login.php") {
-            wp_die('<div class="notice notice-error"><p>To run <strong>Municipio</strong> theme, please install & activate the <a href="http://www.advancedcustomfields.com/pro/">Advanced Custom Fields <strong>PRO</strong></a> plugin.</p>', "ACF Pro Required");
+        if (!is_admin() && $_SERVER["SCRIPT_FILENAME"] != ABSPATH . "wp-login.php") { // phpcs:ignore
+            wp_die('<div class="notice notice-error"><p>To run <strong>Municipio</strong> theme, please install & activate the <a href="http://www.advancedcustomfields.com/pro/">Advanced Custom Fields <strong>PRO</strong></a> plugin.</p>', "ACF Pro Required"); // phpcs:ignore
         }
     }
 }

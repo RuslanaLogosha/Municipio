@@ -2,7 +2,8 @@
 
 namespace Municipio\Helper;
 
-use \Municipio\Helper\Navigation\MenuConstructor as MenuConstructor;
+use Municipio\Helper\Navigation\MenuConstructor as MenuConstructor;
+use Municipio\Helper\Navigation\GetMenuData as GetMenuData;
 
 /**
 * Navigation items
@@ -27,9 +28,9 @@ class Navigation
 
     //Static cache for ancestors
     private static $runtimeCache = [
-        'ancestors' => [
+        'ancestors'         => [
             [
-                'toplevel' => [],
+                'toplevel'   => [],
                 'notoplevel' => []
             ]
         ],
@@ -38,8 +39,8 @@ class Navigation
 
     public function __construct(string $identifier = '', string $context = 'municipio')
     {
-        $this->identifier = $identifier;
-        $this->context    = $context;
+        $this->identifier              = $identifier;
+        $this->context                 = $context;
         $this->menuConstructorInstance = new MenuConstructor($this->identifier);
         $this->globalToLocal('wpdb', 'db');
     }
@@ -114,7 +115,7 @@ class Navigation
     /**
      * Get nested array representing page structure
      *
-     * @param   array     $postId             The current post id
+     * @param   int     $postId             The current post id
      *
      * @return  array                         Nested page array
      */
@@ -425,9 +426,9 @@ class Navigation
 
                     // Store the processed item in the cache
                     self::$runtimeCache['complementObjects'][$cacheKey] = apply_filters(
-                        'Municipio/Navigation/Item', 
-                        $processedItem, 
-                        $this->identifier, 
+                        'Municipio/Navigation/Item',
+                        $processedItem,
+                        $this->identifier,
                         false
                     );
                 }
@@ -662,28 +663,26 @@ class Navigation
      * @param string $menu The menu id to get
      * @return bool|array
      */
-    public function getMenuItems(string $menu, int $pageId = null, bool $fallbackToPageTree = false, bool $includeTopLevel = true, bool $onlyKeepFirstLevel = false)
+    public function getMenuItems(int|string $menu, int $pageId = null, bool $fallbackToPageTree = false, bool $includeTopLevel = true, bool $onlyKeepFirstLevel = false)
     {
-        $result = [];
-        $menuLocation = get_nav_menu_locations()[$menu] ?? null;
-        
-        if ($menuLocation && has_nav_menu($menu)) {
-            $menuItems = wp_get_nav_menu_items($menuLocation);
+        $menuItems = GetMenuData::getNavMenuItems($menu) ?: [];
+        $menuItems = $this->menuConstructorInstance->structureMenuItems($menuItems, $pageId);
 
-            if (is_array($menuItems) && !empty($menuItems)) {
-                $result = $this->menuConstructorInstance->structureMenuItems($menuItems, $pageId);
-            }
-        } elseif ($fallbackToPageTree && is_numeric($pageId)) {
-            $result = $this->getNested($pageId);
+        if (empty($menuItems) && $fallbackToPageTree && is_numeric($pageId)) {
+            $menuItems = $this->getNested($pageId);
         }
 
-        $result = apply_filters('Municipio/Navigation/Items', $result, $this->identifier);
+        $menuItems = apply_filters('Municipio/Navigation/Items', $menuItems, $this->identifier);
 
-        if (!empty($result) && is_array($result)) {
-            $pageStructure = $includeTopLevel ? $this->menuConstructorInstance->buildStructuredMenu($result) : $this->removeTopLevel($this->menuConstructorInstance->buildStructuredMenu($result));
+        if (!empty($menuItems)) {
+            $pageStructure = $includeTopLevel ?
+                $this->menuConstructorInstance->buildStructuredMenu($menuItems) :
+                $this->removeTopLevel($this->menuConstructorInstance->buildStructuredMenu($menuItems));
+
             if ($onlyKeepFirstLevel) {
                 $pageStructure = $this->removeSubLevels($pageStructure);
             }
+
 
             return apply_filters('Municipio/Navigation/Nested', $pageStructure, $this->identifier, $pageId);
         }
@@ -692,20 +691,9 @@ class Navigation
     }
 
     /**
-     * Normalize url
-     *
-     * @param string $path
-     * @return string
-     */
-    private function sanitizePath(string $path): string
-    {
-        return rtrim(trim($path, '/'), '/');
-    }
-
-    /**
      * Removes top level items
      *
-     * @param   array   $result    The unfiltered result set
+     * @param   array   $result    The  unfiltered result set
      *
      * @return  array   $result    The filtered result set (without top level)
      */
@@ -733,6 +721,7 @@ class Navigation
         }
         return $result;
     }
+
     /**
      * It returns an array of items that are used in the accessibility menu.
      *

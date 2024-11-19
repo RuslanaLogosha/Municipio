@@ -29,9 +29,8 @@
     {!! $wpHeader !!}
 
 </head>
-
 <body class="{{ $bodyClass }}" data-js-page-id="{{ $pageID }}" data-js-post-type="{{ $postType }}"
-    @if ($customizer->headerSticky === 'sticky') data-js-toggle-item="mega-menu"
+    @if ($customizer->headerSticky === 'sticky' && empty($headerData['nonStickyMegaMenu'])) data-js-toggle-item="mega-menu"
             data-js-toggle-class="mega-menu-open" @endif>
     <div class="site-wrapper">
 
@@ -130,7 +129,7 @@
     @show
 
     {{-- Floating menu --}}
-    @includeWhen($floatingMenuItems, 'partials.navigation.floating')
+    @includeWhen(!empty($floatingMenu['items']), 'partials.navigation.floating')
 
     {{-- Wordpress required call to wp_footer() --}}
     {!! $wpFooter !!}

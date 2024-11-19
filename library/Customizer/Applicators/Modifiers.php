@@ -10,14 +10,15 @@ class Modifiers extends AbstractApplicator
     {
         add_action('customize_save_after', array($this, 'storeModifiers'), 50);
         add_filter('ComponentLibrary/Component/Modifier', array($this, 'applyStoredModifiers'), 10, 2);
+        add_action('Municipio/Customizer/Applicator/Modifiers/RefreshCache', array($this, 'storeModifiers'), 50, 1);
     }
 
     /**
      * Calculate and store modifiers on save of customizer
-     * 
+     *
      * @return void
      */
-    public function storeModifiers($manager = null) : array
+    public function storeModifiers($manager = null): array
     {
         $this->setStatic(
             $storedModifiers = $this->calculateModifiers()
@@ -63,8 +64,10 @@ class Modifiers extends AbstractApplicator
                     throw new \Error("Operator must be != or == to be used in ComponentData applicator. Provided value: " . $filterContext['operator']);
                 }
 
-                if (($filterContext['operator'] == "==" && in_array($filterContext['context'], $contexts)) ||
-                    ($filterContext['operator'] == "!=" && !in_array($filterContext['context'], $contexts))) {
+                if (
+                    ($filterContext['operator'] == "==" && in_array($filterContext['context'], $contexts)) ||
+                    ($filterContext['operator'] == "!=" && !in_array($filterContext['context'], $contexts))
+                ) {
                     $passFilterRules = true;
                 }
             }
@@ -84,11 +87,11 @@ class Modifiers extends AbstractApplicator
      */
     private function calculateModifiers()
     {
-        if($runtimeCache = $this->getRuntimeCache('modifiersRuntimeCache')) {
+        if ($runtimeCache = $this->getRuntimeCache('modifiersRuntimeCache')) {
             return $runtimeCache;
         }
 
-        $fields = $this->getFields();
+        $fields    = $this->getFields();
         $modifiers = [];
 
         if (is_array($fields) && !empty($fields)) {
@@ -111,14 +114,14 @@ class Modifiers extends AbstractApplicator
                             if (!is_array($context)) {
                                 $output['context'][$contextKey] = [
                                     'operator' => '==',
-                                    'context' => $context
+                                    'context'  => $context
                                 ];
                             }
                         }
 
                         $modifiers[] = [
                             'contexts' => $output['context'],
-                            'value' => \Kirki::get_option($key),
+                            'value'    => \Kirki::get_option($key),
                         ];
                     }
                 }
@@ -126,7 +129,7 @@ class Modifiers extends AbstractApplicator
         }
 
         return $this->setRuntimeCache(
-            'modifiersRuntimeCache', 
+            'modifiersRuntimeCache',
             $modifiers
         );
     }
